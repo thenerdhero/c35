@@ -3,6 +3,11 @@ var app = express();
 
 app.engine('html', require('ejs').renderFile);
 
+var pg = require('pg');
+var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/icstars';
+
+var client = pg.connect(connectionString, function(){});
+
 app.get('/', function(req,res){
   return res.render('index.html');
 });
