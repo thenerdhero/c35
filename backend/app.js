@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+var port = process.env.PORT || 1337;
+
 
 //setup templating for rendering files in the views folder in frontend/
 app.engine('html', require('ejs').renderFile);
@@ -10,6 +12,6 @@ app.get('/', function(req,res){
   return res.render('index.html');
 });
 
-app.listen(1337, function(){
+app.listen(port, function(){
  console.log("App is listening on 1337"); 
 });
