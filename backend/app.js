@@ -13,5 +13,5 @@ app.get('/', function(req,res){
 });
 
 app.listen(port, function(){
- console.log("App is listening on 1337"); 
+ console.log("App is listening on " + port); 
 });
