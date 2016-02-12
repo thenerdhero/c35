@@ -13,6 +13,11 @@ app.get('/', function(req,res){
   return res.render('index.html');
 });
 
+app.post('/tableOfResults', function(req,res){
+  console.log(req.body)
+  return res.render('tableOfResults.html');
+});
+
 app.listen(port, function(){
  console.log("App is listening on " + port); 
 });
