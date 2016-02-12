@@ -1,9 +1,10 @@
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 1337;
+var bodyParser = require('body-parser')
+app.use( bodyParser.json() );       
+app.use( bodyParser.urlencoded({ extended: true }) ); 
 
-
-//setup templating for rendering files in the views folder in frontend/
 app.engine('html', require('ejs').renderFile);
 app.set('views', __dirname.replace('backend', 'frontend') + '/views');
 app.use(express.static(__dirname.replace('backend', 'frontend')));
