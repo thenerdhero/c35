@@ -15,7 +15,7 @@ app.get('/', function(req,res){
 
 app.post('/tableOfResults', function(req,res){
   console.log(req.body)
-  return res.render('tableOfResults.html');
+  return 
 });
 
 app.listen(port, function(){
