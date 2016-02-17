@@ -1,5 +1,7 @@
-var router = require('express').Router();
+'use strict';
+
 /*
+
  Here is where you will configure the routes of your application.
  This how you can make urls that will render your html pages you put in the views folder.
  This is also known as making a GET request
@@ -15,8 +17,10 @@ var router = require('express').Router();
     return res.send("success");
   });
 
+*/
 
- */
+var router = require('express').Router();
+
 module.exports = function(){
 
   router.get('/helloworld', function(req,res){
