@@ -24,8 +24,14 @@ module.exports = function(){
   });
 
   router.post('/addValue', function(req,res){
-    console.log(req.body); 
-    return;
+    require('./database').executeQuery("INSERT INTO example (val) VALUES ('" + req.body.value + "')");
+    return res.send("success");
+  });
+
+  router.get('/resultsInDatabase', function(req,res){
+    require('./database').executeQuery("SELECT * FROM example", function(results) {
+      res.send(results);
+    });
   });
 
   return router
