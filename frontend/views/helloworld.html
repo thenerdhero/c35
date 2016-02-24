@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="../js/helloworld.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
           crossorigin="anonymous">
@@ -10,15 +11,17 @@
   <body>
     <div class="content">
         <h3> Hello World </h3>
-        <form class="form-group" action="/addTrain" method="post">
-            <div class="input"> Train Name: <input type="text" name="nameOfTrain" maxlength="100"/></div>
-            <div class="input"> In Service? <input type="checkbox" name="inService"/></div>
+        <p>Let's add trains to a database</p>
+        <form class="form-group" id="addTrainForm">
+            <div class="input"> Train Name: <input type="text" id="nameOfTrain" maxlength="100"/></div>
+            <div class="input"> In Service? <input type="checkbox" id="inService" value="In Service"/></div>
             <div class="input"> Number of Available Train: <input type="number" min="0" max="10"
-                                                                  name="availableTrains"/></div>
+                                                                  id="availableTrains"/></div>
             <div>
-                <button class="btn btn-default">Submit</button>
+                <input type="submit" class="btn btn-default"/>
             </div>
         </form>
+        <a href="/trainList" class="btn btn-default">Go to train page</a>
     </div>
   </body>
 </html>
