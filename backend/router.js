@@ -20,6 +20,7 @@
 */
 
 var router = require('express').Router();
+var database = require('./database.js');
 
 module.exports = function(){
 
@@ -28,12 +29,12 @@ module.exports = function(){
   });
 
   router.post('/addValue', function(req,res){
-    require('./database').executeQuery("INSERT INTO example (val) VALUES ('" + req.body.value + "')");
+    database.executeQuery("INSERT INTO example (val) VALUES ('" + req.body.value + "')");
     return res.send("success");
   });
 
   router.get('/resultsInDatabase', function(req,res){
-    require('./database').executeQuery("SELECT * FROM example", function(results) {
+    database.executeQuery("SELECT * FROM example", function(results) {
       res.send(results);
     });
   });
