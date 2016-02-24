@@ -4,6 +4,7 @@
 
  Here is where you will configure the routes of your application.
  This how you can make urls that will render your html pages you put in the views folder.
+
  This is also known as making a GET request
  An example of this looks like:
   router.get('string with your route', function(req,res){
