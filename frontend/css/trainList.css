@@ -6,8 +6,10 @@ body {
 #trainTable {
   border: solid 1px;
   margin-top: 20px;
+  border-collapse: collapse;
 }
 
 td, th {
   padding: 5px;
+  border: solid 1px;
 }
