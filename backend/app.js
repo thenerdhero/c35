@@ -5,9 +5,9 @@ var bodyParser = require('body-parser');
 app.use( bodyParser.json() );
 app.use( bodyParser.urlencoded({ extended: true }) );
 
-//Set up to render the html correctly from the views folder
+//Set up to render the html correctly from the html folder
 app.engine('html', require('ejs').renderFile);
-app.set('views', __dirname.replace('backend', 'frontend') + '/views');
+app.set('html', __dirname.replace('backend', 'frontend') + '/html');
 app.use(express.static(__dirname.replace('backend', 'frontend')));
 
 //Set up to use all the routes from router.js
