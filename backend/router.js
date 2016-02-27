@@ -29,15 +29,21 @@ module.exports = function(){
     return res.render('helloworld.html');
   });
 
-  router.post('/addValue', function(req,res){
-    database.executeQuery("INSERT INTO example (val) VALUES ('" + req.body.value + "')");
+  router.post('/addTrain', function(req,res){
+    database.executeQuery("INSERT INTO trains (name,inService,numberOfAvailable) VALUES ('" + req.body.nameOfTrain +
+      "'," + req.body.inService  +
+      "," + req.body.availableTrains + ")");
     return res.send("success");
   });
 
-  router.get('/resultsInDatabase', function(req,res){
-    database.executeQuery("SELECT * FROM example", function(results) {
+  router.get('/getTrains', function(req,res){
+    database.executeQuery("SELECT * FROM trains", function(results) {
       res.send(results);
     });
+  });
+
+  router.get('/trainList', function(req,res){
+    return res.render('trainList.html');
   });
 
   return router

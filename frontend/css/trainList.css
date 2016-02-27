@@ -1,0 +1,13 @@
+body {
+  margin: 0 auto;
+  width: 95%
+}
+
+#trainTable {
+  border: solid 1px;
+  margin-top: 20px;
+}
+
+td, th {
+  padding: 5px;
+}

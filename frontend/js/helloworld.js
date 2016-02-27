@@ -10,7 +10,9 @@ $(document).ready(function(){
       availableTrains: $('#availableTrains').val()
     });
 
-    $('#addTrainForm').reset();
+
+
+    $('#addTrainForm')[0].reset();
     return false;
   });
 
