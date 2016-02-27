@@ -3,7 +3,7 @@
 var config = require('./config');
 
 var pg = require('pg');
-var conString = "postgres://" + config.DATABASE_USERNAME + ":" + config.DATABASE_PASSWORD + "@" + config.DATABASE_URL+ "/" + config.DATABASE_NAME;
+var conString = config.DATABASE_CONNECTION_URL;
 
 module.exports = function() {
   return {
