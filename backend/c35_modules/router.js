@@ -1,6 +1,5 @@
 'use strict';
 
-
 var router = require('express').Router();
 var database = require('./database.js');
 var _ = require('lodash');
