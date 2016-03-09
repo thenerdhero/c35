@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 app.use( bodyParser.json() );
 app.use( bodyParser.urlencoded({ extended: true }) );
 
-//Set up to render the html correctly from the html folder
+//Set up to render the views correctly from the views folder
 app.engine('html', require('ejs').renderFile);
 app.set('html', __dirname.replace('backend', 'frontend') + '/html');
 app.use(express.static(__dirname.replace('backend', 'frontend')));
