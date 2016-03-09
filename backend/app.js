@@ -11,7 +11,7 @@ app.set('html', __dirname.replace('backend', 'frontend') + '/html');
 app.use(express.static(__dirname.replace('backend', 'frontend')));
 
 //Set up to use all the routes from router.js
-var router = require('./router');
+var router = require('./c35_modules/router');
 app.use('/', router);
 
 app.listen(port, function(){
