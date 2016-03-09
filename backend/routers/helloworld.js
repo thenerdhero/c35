@@ -21,7 +21,7 @@
 */
 
 var router = require('express').Router();
-var database = require('./database');
+var database = require('../c35_modules/database');
 
 module.exports = function() {
 

@@ -8,7 +8,7 @@ var fs = require('fs');
 
 module.exports = function(){
 
-  _.each(fs.readdirSync('../routers'), function(fileName){
+  _.each(fs.readdirSync('./routers'), function(fileName){
     var routerFromFile = require("../routers/" + fileName);
     router.stack = _.concat(router.stack, routerFromFile.stack);
   });
