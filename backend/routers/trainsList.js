@@ -8,14 +8,14 @@
  This is also known as making a GET request
  An example of this looks like:
  router.get('string with your route', function(req,res){
- return res.render('path to your views in the views folder')
+   return res.render('path to your views in the views folder')
  });
 
  You can also setup POST request for something that will send something to a database.
  router.post('string with your route', function(req,res){
- executeDBFunction();
- //you can then send a response with res.send();
- return res.send("success");
+   executeDBFunction();
+   //you can then send a response with res.send();
+   return res.send("success");
  });
 
 */
