@@ -13,7 +13,7 @@ To get setup the project in cloud9 you will need to do the following:
 
 3. In this folder you need to run `npm install`. This command will install all the dependencies listed in the package.json file into `/node_modules`. Please do not modify files in this folder and if you want to learn more about [package.json information](https://docs.nodejitsu.com/articles/getting-started/npm/what-is-the-file-package-json) you should!
 
-4. You will need to have a `config.js` in your `/backend` directory. We will provide your team with the credentials to fill in here. This file will need to look like the following: 
+4. You will need to have a `config.js` in your `/backend` directory. **You do not need to worry about this. We will provide you with this file.** This file will need to look like the following: 
 >```javascript
 >'use strict';
 >
@@ -32,10 +32,16 @@ This is an explaination about how to use the set up here to make your backend wo
 ###Starting with the `/frontend` directory:
 
 In here you can put all your html, css, and javascript in the respective directories. To start, keep these directories flat and not creating sub directories inside `/html`, `/css`, or `/js`. If you want to add subdirectories you will have to make sure you understand how that affects the references in your backend code.
-
+w
 ###Making a router 
 
 We created a directory called `/routers` were you can create routers for the different html pages. The idea is that every router will have the single responsibilty for each page. When you create a router you will need to use the `router.get('route', callbackFn())` or `router.post('route', callbackFn())` to make the backend serve your html page, results from a database query, or inserting data into the database. Examples of this are seen in `routers/helloworld.js` and `routers/trainsList.js`
+
+###The database
+
+There are two files `postgres_trains_remote_example.sql` and `postgres_trains_local_example.sql` that will help setting up your database. There are instructions in each of the files on how to run them. 
+
+The difference between these files is one will help you set a database that exists on cloud9 and the other will set up the database that we have set up for you on heroku. For development you are going to want to set up the local database. The remote database will be used for your database in production. By production we mean the site that your client will go to see your final product. 
 
 
 

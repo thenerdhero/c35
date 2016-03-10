@@ -2,9 +2,6 @@
 -- You can execute the following commands in your terminal filling in the values like <password>
 -- before executing them:
 
--- export PGPASSWORD=<password>
--- psql -h <host> -d <database> -U <user_name> -p <port> <path to postgres_trains_example.sql file>
-
 -- in cloud 9, start the postgres service:
 -- sudo service postgresql start
 
@@ -12,13 +9,13 @@
 -- sudo sudo -u postgres psql
 
 -- get to the filesystem while still logged in as super user
--- \! 
+-- \!
 
 -- change this directory
 -- cd /backend
 
 -- run this file
--- psql -f postgres_trains_example.sql
+-- psql -f postgres_trains_local_example.sql
 
 create database nodeworkshop;
 
