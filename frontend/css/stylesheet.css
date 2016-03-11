@@ -1,0 +1,29 @@
+body {
+    background-color: white;
+}
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+.active {
+    background-color: #4CAF50;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #983222;
+}
+li {
+   float: left;
+}
+li a {
+    display: block;
+    color: #9A9964;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
