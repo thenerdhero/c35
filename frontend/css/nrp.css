@@ -1,0 +1,54 @@
+.all {
+font-family: Verdana, Arial, Helvetica, sans-serif;	
+    
+}
+
+.namee p {
+
+	 text-align: center;
+	 font-size: 110%;
+	 margin: 25px 0px 20px 0px;
+}
+
+.aprove p {
+
+	 text-align: center;
+
+}
+
+.info  {
+
+	text-align: center;
+	 font-size: 110%;
+	 margin-top:15px;
+	 margin-bottom:25px;
+	 background-color:#527F92;
+	 padding-top:15px;
+	 padding-bottom:15px;
+}
+
+.course {
+
+	 margin-top:25px;
+	 margin-bottom:15px;
+}
+.ad {
+
+	 margin-top:10px;
+	 margin-bottom:15px;
+}
+
+.vendor {
+	 text-align: center;
+	  font-size: 110%;
+	 margin-top:25px;
+	 margin-bottom:25px;
+	 background-color:#527F92;
+	 padding-top:15px;
+	 padding-bottom:15px;
+}
+
+.zip {
+	 margin-top:15px;
+	 margin-bottom:15px;
+}
