@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Approver first page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mpage2.css">
+</head>
+<body>
+<!-- general container???????????????????-->
+  <div class="container-fluid">
+
+  	<!-- Navbar -->
+<div class="bs-example">
+      <nav role="navigation" class="navbar navbar-default">
+        <div class="navbar-header">
+          <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" width="25%">
+            </img>
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                        <li><a href="#">Instruction</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+        </div>
+    </nav>
+</div>
+
+
+<!-- My Search /Start/End calendar, choose option -->
+  
+        <div class="row sea">
+          <div class=" col-xs-12 col-sm-12 col-md-3">
+      <div class="light">
+          <form>
+          <span><input type="text" class="search rounded" placeholder="Search..."></span>
+          </form>
+      </div>
+    </div>
+          
+
+          <div class=" col-xs-12 col-sm-12 col-md-3">
+          	<select>
+    <option value="" selected disabled>Please select Status</option>
+     <option value="">All</option>
+    <option value="">Y</option>
+    <option value="">N</option>
+    <option value="">P</option>
+    <option value="">N/A</option>
+</select>
+          </div>
+
+          <div class=" col-xs-12 col-sm-12 col-md-3"> Start Date
+<div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+                          </span>
+                            </div>
+                             </div>
+                             <script type="text/javascript">
+                                   $(function () {
+                                      $('#datetimepicker1').datetimepicker();
+                                         });
+                                           </script>
+          </div>
+
+          <div class=" col-xs-12 col-sm-12 col-md-3"> End Date
+
+           <div class="form-group">
+                             <div class='input-group date' id='datetimepicker1'>
+                          <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+          </div>
+        <script type="text/javascript">
+      $(function () {
+   $('#datetimepicker1').datetimepicker();
+ });
+ </script></div>
+          
+</div>
+
+
+
+
+<!--table-->
+ <div class="row " style="background-color:#527F92">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>Employee Name</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Course Name</p></div>
+  <div class="col-xs-1 col-sm-1 col-md-1"><p>Status</p></div>
+  <div class="col-xs-3 col-sm-3 col-md-3"><p>Cost</p></div>
+  </div>
+  
+
+ <div class="row top" style="background-color:#eleace">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>Alan Tang</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Visual Studio Live! 2015</p></div>
+  <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
+  <div class="col-xs-3 col-sm-3 col-md-3">1795.00</div>
+  </div>
+  
+
+ <div class="row top" style="background-color:#d5e2e7">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>KENDALL ZETTLMEIER</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Visual Studio Live! New York</p></div>
+  <div class="col-xs-1 col-sm-1 col-md-1"><p>N</p></div>
+  <div class="col-xs-3 col-sm-3 col-md-3">1455.00</div>
+  </div>
+
+ <div class="row top" style="background-color:#eleace">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>JACQUELINE DUKES</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Learn latest Micosoft technology</p></div>
+  <div class="col-xs-1 col-sm-1 col-md-1"><p>P</p></div>
+  <div class="col-xs-3 col-sm-3 col-md-3">1000.00</div>
+  </div>
+  
+  <div class="row top" style="background-color:#d5e2e7">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>JACQUELINE DUKES</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Learning AppDynmic all core product features</p></div>
+  <div class="col-xs-1 col-sm-1 col-md-1"><p>N/A</p></div>
+  <div class="col-xs-3 col-sm-3 col-md-3">2400.00</div>
+  </div>
+  
+  <div class="row top" style="background-color:#eleace">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>Alan Tang</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Visual Studio Live! 2015</p></div>
+  <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
+  <div class="col-xs-3 col-sm-3 col-md-3">1795.00</div>
+  </div>
+  
+
+ <div class="row top" style="background-color:#d5e2e7">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>KENDALL ZETTLMEIER</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Visual Studio Live! New York</p></div>
+  <div class="col-xs-1 col-sm-1 col-md-1"><p>N</p></div>
+  <div class="col-xs-3 col-sm-3 col-md-3">1455.00</div>
+  </div>
+<div class="row top" style="background-color:#eleace">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>JACQUELINE DUKES</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Learn latest Micosoft technology</p></div>
+  <div class="col-xs-1 col-sm-1 col-md-1"><p>P</p></div>
+  <div class="col-xs-3 col-sm-3 col-md-3">1000.00</div>
+  </div>
+  
+  <div class="row top" style="background-color:#d5e2e7">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>JACQUELINE DUKES</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Learning AppDynmic all core product features</p></div>
+  <div class="col-xs-1 col-sm-1 col-md-1"><p>N/A</p></div>
+  <div class="col-xs-3 col-sm-3 col-md-3">2400.00</div>
+  </div>
+  
+
+
+
+</div> <!--closed general conteiner-->
+
+	</body>
+</html
