@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Approver first page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="option2ap.css">
+</head>
+<body>
+<!-- general container???????????????????-->
+  <div class="container-fluid">
+
+  	<!-- Navbar -->
+<div class="bs-example">
+      <nav role="navigation" class="navbar navbar-default">
+        <div class="navbar-header">
+          <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" width="25%">
+            </img>
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                        <li><a href="#">Instruction</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- My Search /Start/End calendar, choose option -->
+  
+        <div class="row sea">
+          <div class=" col-xs-12 col-sm-12 col-md-3">
+      <div class="light">
+          <form>
+          <span><input type="text" class="search rounded" placeholder="Search..."></span>
+          </form>
+      </div>
+    </div>
+          
+
+          <div class=" col-xs-12 col-sm-12 col-md-3">
+            <select>
+    <option value="" selected disabled>Please select Status</option>
+     <option value="">All</option>
+    <option value="">Employee name 1</option>
+    <option value="">Employee name 2</option>
+    <option value="">Employee name 3</option>
+    <option value="">Employee name 4</option>
+</select>
+          </div>
+
+          <div class=" col-xs-12 col-sm-12 col-md-3"> Start Date
+<div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+                          </span>
+                            </div>
+                             </div>
+                             <script type="text/javascript">
+                                   $(function () {
+                                      $('#datetimepicker1').datetimepicker();
+                                         });
+                                           </script>
+          </div>
+
+          <div class=" col-xs-12 col-sm-12 col-md-3"> End Date
+
+           <div class="form-group">
+                             <div class='input-group date' id='datetimepicker1'>
+                          <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+          </div>
+        <script type="text/javascript">
+      $(function () {
+   $('#datetimepicker1').datetimepicker();
+ });
+ </script></div>
+          
+</div>
+
+
+<!--table-->
+  <div class="row" style="background-color:#eleace">
+  <div class="col-xs-12 col-sm-12 col-md-12"><p>Outstanding Requests</p></div>
+</div>
+
+<!--table-->
+ <div class="row" style="background-color:#527F92">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>Request #<br>Employee Name</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Start/End Date</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>SV<br>Appv</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>DH<br>Appv</p></div>
+  </div>
+  
+
+ <div class="row" style="background-color:#eleace">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>20150055<br>KENDALL ZETTLMEIER</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>2016-02-07<br>2016-05-08</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>Y</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>P</p></div>
+  </div>
+  
+
+ <div class="row" style="background-color:#d5e2e7">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>20150022 <br> JACQUELINE DUKES</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>2016-02-07<br>2016-05-08</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>Y</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>Y</p></div>
+  </div>
+
+ <div class="row" style="background-color:#eleace">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>20154578</p><br>Alan Tang</div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>2016-02-07<br>2016-05-08</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>P</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>P</p></div>
+  </div>
+  
+  <div class="row" style="background-color:#d5e2e7">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>20150023 <br>JACQUELINE DUKES</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>2016-02-07<br>2016-05-08</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>P</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>Y</p></div>
+  </div>
+  
+
+
+
+
+
+
+
+ <div class="row" style="background-color:#eleace">
+  <div class="col-xs-12 col-sm-12 col-md-12"><p>Rejected Requests</p></div>
+</div>
+
+<!--table-->
+ <div class="row" style="background-color:#527F92">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>Request #<br>Employee Name</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Start/End Date</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>SV<br>Appv</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>DH<br>Appv</p></div>
+  </div>
+  
+
+ <div class="row" style="background-color:#eleace">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>20150055<br>KENDALL ZETTLMEIER</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>2016-02-07<br>2016-05-08</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>Y</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>N</p></div>
+  </div>
+  
+
+ <div class="row" style="background-color:#d5e2e7">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>20150022 <br> JACQUELINE DUKES</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>2016-02-07<br>2016-05-08</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>N</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>" "</p></div>
+  </div>
+
+ <div class="row" style="background-color:#eleace">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>20154578</p><br>Alan Tang</div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>2016-02-07<br>2016-05-08</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>Y</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>N</p></div>
+  </div>
+  
+  <div class="row" style="background-color:#d5e2e7">
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>20150023 <br>JACQUELINE DUKES</p></div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"><p>2016-02-07<br>2016-05-08</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>Y</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>N</p></div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+</div> <!--closed general conteiner-->
+
+    </body>
+</html>
