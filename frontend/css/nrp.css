@@ -1,13 +1,15 @@
-.all {
-font-family: Verdana, Arial, Helvetica, sans-serif;	
-    
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+color:#666666;
+margin:0;
+padding:0;
 }
 
-.namee p {
+.name p {
 
 	 text-align: center;
-	 font-size: 110%;
-	 margin: 25px 0px 20px 0px;
+	 font-size: 120%;
+	 margin: 25px 0px 10px 0px;
 }
 
 .aprove p {
@@ -16,39 +18,103 @@ font-family: Verdana, Arial, Helvetica, sans-serif;
 
 }
 
+
+.name {
+	border-bottom: 5px solid #6c4d23;
+}
+
+
 .info  {
 
 	text-align: center;
-	 font-size: 110%;
-	 margin-top:15px;
+	 font-size: 120%;
+	 margin-top:50px;
 	 margin-bottom:25px;
-	 background-color:#527F92;
-	 padding-top:15px;
-	 padding-bottom:15px;
+	 background-color:#983222;
+	 color:#fff;
+	 padding: 18px 0px;
 }
 
-.course {
+.radio-inline p {
+	margin-right: 105px;
+	 /*text-align: center;*/
+	
+}
+
+
+.info p {
+	margin-top: 10px;
+}
+
+
+
+.fields {
 
 	 margin-top:25px;
-	 margin-bottom:15px;
+	 margin-bottom:25px;
+	 
 }
+
+
+/*
+.dates {
+	
+	 margin-top:25px;
+	 margin-bottom:25px;
+	 
+}
+	 
+	 
 .ad {
 
-	 margin-top:10px;
-	 margin-bottom:15px;
+	  margin-top:25px;
+	 margin-bottom:25px;
 }
 
+
+.benefits {
+ margin-top:25px;
+	 margin-bottom:25px;
+}
+
+
 .vendor {
-	 text-align: center;
-	  font-size: 110%;
 	 margin-top:25px;
 	 margin-bottom:25px;
-	 background-color:#527F92;
-	 padding-top:15px;
-	 padding-bottom:15px;
 }
 
 .zip {
-	 margin-top:15px;
-	 margin-bottom:15px;
+	  margin-top:25px;
+	 margin-bottom:25px;
 }
+
+*/
+
+.send {
+	
+  width:45%;
+  padding:15px 0px;
+  background-color:#527F92;
+  color: #fff;
+  margin:3px 0px 50px;
+  font-size: 160%
+}
+
+
+@media (max-width: 768px) { 
+	.radio-inline p {
+	margin-right: 9px;
+}
+
+.send {
+width:40%;
+padding:10px 0px;
+font-size:80%;
+margin: 2px 0px 20px;
+}
+
+}
+
+
+
+

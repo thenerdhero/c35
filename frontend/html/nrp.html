@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>thenewboston</title>
+    <title>I.T. Department - Training Request Form 
+for emploee</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-=======
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
->>>>>>> fff885d75e1ed69d184fbf9d182aaf7b92b58ffc
-    <link rel="stylesheet" type="text/css" href="nrp.css">
+    <link rel="stylesheet" type="text/css" href="../css/nrp.css">
 </head>
 <body>
+
+<!-- general container-->
+  <div class="container">
+
 <!-- Navbar -->
-<div class="container-fluid">
+<div class="bs-example">
       <nav role="navigation" class="navbar navbar-default">
         <div class="navbar-header">
           <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" width="25%">
@@ -32,7 +31,6 @@
         </div>
         <div id="navbarCollapse" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                        <li><a href="#">Back to Main</a></li>
                         <li><a href="#">Instruction</a></li>
                         <li><a href="#">Support</a></li>
                         <li class="divider"></li>
@@ -43,55 +41,48 @@
 </div>
 
 <!-- Title-->
-<div class="container-fluid all" > <!--fluid conteiner for everything-->
-    <div class="row namee"> 
+    <div class="row name"> 
         <div class="col-xs-12 col-sm-12 col-md-12">
-              <p> <b>I.T. Department - Training Request Form  </br>for Scott C Wissel</p></b> </div>
+              <p> <strong>I.T. Department - Training Request Form  </br>for Scott C Wissel</strong></p> </div>
     </div>
 
 <!-- Approvers-->
 
     <div class="row aprove"> 
     	<div class="col-xs-12 col-sm-12 col-md-2"> </div>
-        <div class="col-xs-12 col-sm-12 col-md-3"> <p>Supervisor: Purnesh Rustagi</p></div>
-        <div class="col-xs-12 col-sm-12 col-md-3"> <p>Department Head: Kathy M Miller</p></div>
-        <div class="col-xs-12 col-sm-12 col-md-3"> <p>VP: BRUCE G Schinnelli</p></div>
+        <div class="col-xs-12 col-sm-12 col-md-3"> <p><strong>Supervisor:</strong> Purnesh Rustagi</p></div>
+        <div class="col-xs-12 col-sm-12 col-md-3"> <p><strong>Department Head:</strong> Kathy M Miller</p></div>
+        <div class="col-xs-12 col-sm-12 col-md-3"> <p><strong>Vice President:</strong> BRUCE G Schinnelli</p></div>
         <div class="col-xs-12 col-sm-12 col-md-1"> </div>
     </div>
 
 
 <!--Course Information-->
 <div class="row info"> 
-        <div class="col-xs-12 col-sm-12 col-md-12"> <p> <b>COURSE INFORMATION</b></p></div>
+        <div class="col-xs-12 col-sm-12 col-md-12"> <p> <strong>COURSE INFORMATION</strong></p></div>
     </div>
 
 
 <!--radio buttons-->
-
 <div class="row"> 
-  <div class="col-xs-0 col-sm-0 col-md-3">
-  </div>
-<div class="col-xs-6 col-sm-6 col-md-3">
-<form role="form try">
-    <label class="radio-inline">
-      <input type="radio" name="optradio"><p>Internal Course </p></label>
-         </form>
-        </div>
 
-          <div class="col-xs-6 col-sm-6 col-md-3">
-        <form role="form try">
+  <div class="col-xs-0 col-sm-0 col-md-4">  </div>
+<div class="col-xs-12 col-sm-12 col-md-8">
+<form role="form">
+    <label class="radio-inline">
+      <input type="radio" name="optradio"><p><strong>Internal Course </strong> </p></label>
         <label class="radio-inline">
-        <input type="radio" name="optradio"><p>External Course </p></label>
+          <input type="radio" name="optradio"><p><strong>External Course </strong></p></label>
   </form>
-  <div class="col-xs-0 col-sm-0 col-md-3">
   </div>
-</div>
+  
+
 </div>
 
 
 <!--Course Type, Name and ID row -->
-<div class="row course"> 
- <div class="col-xs-12 col-sm-12 col-md-2"> Course Type:
+<div class="row fields"> 
+ <div class="col-xs-12 col-sm-12 col-md-2"> <strong>Course Type *</strong>
              <form role="form">
     				<div class="checkbox">
       						<label><input type="checkbox" value="">Classroom</label>
@@ -111,12 +102,12 @@
 											</form>
 													</div>
 
-										 <div class="col-xs-12 col-sm-12 col-md-5"> Course Name:
+										 <div class="col-xs-12 col-sm-12 col-md-5"> <strong>Course Name *</strong>
  	      							<form class="form-horizontal">
  								<input type="text" class="form-control" placeholder="Course Name">
     					</form>
 					</div>
-<div class="col-xs-12 col-sm-12 col-md-5"> Course # or ID:
+<div class="col-xs-12 col-sm-12 col-md-5"> <strong>Course # or ID </strong>
 			<form class="form-horizontal">
 						<input type="text" class="form-control" placeholder="Course # or ID">
 								</form>
@@ -125,8 +116,8 @@
 
 
 <!--Start/End Date/ Total Hourse -->
-<div class="row"> 
-	<div class="col-xs-12 col-sm-12 col-md-4"> Start Date
+<div class="row fields"> 
+	<div class="col-xs-12 col-sm-12 col-md-4"> <strong>Start Date *</strong>
 		<div class="form-group">
                 <div class='input-group date' id='datetimepicker1'>
                     <input type='text' class="form-control" />
@@ -142,7 +133,7 @@
        																     </script>
 																				</div>
 
-														<div class="col-xs-12 col-sm-12 col-md-4"> End Date
+														<div class="col-xs-12 col-sm-12 col-md-4"> <strong>End Date *</strong>
 												<div class="form-group">
                							 <div class='input-group date' id='datetimepicker1'>
                     			<input type='text' class="form-control" />
@@ -158,7 +149,7 @@
  </script>
 </div>
 
-<div class="col-xs-12 col-sm-12 col-md-4"> Total Hours
+<div class="col-xs-12 col-sm-12 col-md-4"> <strong>Total Hours*</strong>
 			<form class="form-horizontal">
     				<input type="text" class="form-control" placeholder="Total Hours">
     					</form>
@@ -168,7 +159,7 @@
 
 <!--Location/Website Address/ Costs-->
 <div class="row ad"> 
- 			<div class="col-xs-12 col-sm-12 col-md-4">Location
+ 			<div class="col-xs-12 col-sm-12 col-md-4"><strong>Location *</strong>
  					<form class="form-horizontal">
     						<input type="text" class="form-control" placeholder="Location">
     								</form>
@@ -179,7 +170,7 @@
     						<input type="text" class="form-control" placeholder="Website Adress">
     					</form>
  					</div>
-<div class="col-xs-12 col-sm-12 col-md-4"> Cost($)*
+<div class="col-xs-12 col-sm-12 col-md-4"> <strong>Cost ($) * </strong>
  			<form class="form-horizontal">
     				<input type="text" class="form-control" placeholder="Cost($)*">
     					</form>
@@ -189,20 +180,20 @@
 
 <!--Related Expense/ course benefits/ yes/no-->
 
-<div class="row"> 
- 		<div class="col-xs-12 col-sm-12 col-md-4"> Related Expense ($) *
+<div class="row fields"> 
+ 		<div class="col-xs-12 col-sm-12 col-md-4"> <strong>Related Expense ($) * </strong>
  			<form class="form-horizontal">
     				<input type="text" class="form-control" placeholder="Related Expense ($) *">
     					</form>
 								 </div>
 
-								<div class="col-xs-12 col-sm-12 col-md-4"> Course Benefit *
+								<div class="col-xs-12 col-sm-12 col-md-4"> <strong>Course Benefit * </strong>
  						<form class="form-horizontal">
     				<input type="text" class="form-control" placeholder="Website Adress">
     		</form>
  	</div>
 
- <div class="col-xs-12 col-sm-12 col-md-4"> Is the cost of the training included in this year's plan?
+ <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Is the cost of the training included in this year's plan?</strong>
  			<form role="form">
   					<label class="radio-inline"><input type="radio" name="optradio">Yes</label>
 							<label class="radio-inline"><input type="radio" name="optradio">NO</label>
@@ -211,25 +202,25 @@
 </div>
 
 <!-- Vendor info-->
- <div class="row vendor"> 
-        <div class="col-xs-12 col-sm-12 col-md-12"><b>VENDOR INFORMATION</b></div>
+ <div class="row info"> 
+        <div class="col-xs-12 col-sm-12 col-md-12"><p><b>VENDOR INFORMATION</b></p></div>
     </div>
 
 <!--Vendor Name/Vendor Address#1/ Address#2-->
-<div class="row"> 
-    <div class="col-xs-12 col-sm-12 col-md-4"> Vendor Name *
+<div class="row fields"> 
+    <div class="col-xs-12 col-sm-12 col-md-4"><strong> Vendor Name * </strong>
       <form class="form-horizontal">
             <input type="text" class="form-control" placeholder="Vendor Name *">
               </form>
                  </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-4"> Vendor Address#1
+                <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Vendor Address#1</strong>
             <form class="form-horizontal">
             <input type="text" class="form-control" placeholder="Vendor Address#1">
         </form>
   </div>
 
- <div class="col-xs-12 col-sm-12 col-md-4"> Vendor Address#2
+ <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Vendor Address#2</strong>
       <form class="form-horizontal">
             <input type="text" class="form-control" placeholder="Vendor Address#2">
               </form>
@@ -237,28 +228,28 @@
 </div>
 
 <!--Vendor city, Vendor State, Vendor Zip-->
-<div class="row zip"> 
-    <div class="col-xs-12 col-sm-12 col-md-4"> Vendor City
+<div class="row fields"> 
+    <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Vendor City </strong>
       <form class="form-horizontal">
             <input type="text" class="form-control" placeholder="Vendor City">
               </form>
                  </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-4"> Vendor State
+                <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Vendor State </strong>
             <form class="form-horizontal">
             <input type="text" class="form-control" placeholder="Vendor State">
         </form>
   </div>
 
- <div class="col-xs-12 col-sm-12 col-md-4"> Vendor Zip
+ <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Vendor Zip  </strong>
       <form class="form-horizontal">
             <input type="text" class="form-control" placeholder="Vendor Zip">
               </form>
                 </div>
 </div>
 
- <div class="row"> 
-        <div class="col-xs-12 col-sm-12 col-md-4"> Forward to Accounting?
+ <div class="row fields"> 
+        <div class="col-xs-12 col-sm-12 col-md-4"><strong> Forward to Accounting?</strong>
       <form role="form">
             <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
               <label class="radio-inline"><input type="radio" name="optradio">NO</label>
@@ -268,11 +259,10 @@
 
 <!-- BUTTON --> 
 <div class="row"> 
-  <div class="col-xs-12 col-sm-12 col-md-3"> </div>
- <div class="col-xs-12 col-sm-12 col-md-3"> 
-<a href="#" class="btn" style="background-color:#527F92; color: white;" role="button">Submit</a> </div>
+  <div class="col-xs-12 col-sm-12 col-md-4"> </div>
+ <div class="col-xs-12 col-sm-12 col-md-8"> 
+<a href="#" class="btn send" </a> <role="button">Send for Approval</a> </div>
 </div>
-<div class="col-xs-12 col-sm-12 col-md-6"> </div>
    </div>
 
 
