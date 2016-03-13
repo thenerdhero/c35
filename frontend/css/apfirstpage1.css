@@ -1,36 +1,31 @@
-.first{
-
-margin-top:50px;
-margin-bottom:20px;
-margin-left: 250px;
-margin-right:250px;
-padding: 30px 20px 30px 20px;
-width:60%;
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+color:#666666;
+margin:0;
+padding:0;
 }
 
-.second {
-	margin-top:40px;
-margin-bottom:20px;
-margin-left: 250px;
-margin-right:250px;
-padding: 30px 20px 30px 20px;
+.main-buttons{
+margin: 34px auto 16px;
+padding: 30px 20px;
 width:60%;
+background-color:#527F92;
+color: #fff;
 }
 
-.third {
-margin-top:40px;
-margin-bottom:20px;
-margin-left: 250px;
-margin-right:250px;
-padding: 30px 20px 30px 20px;
-width:60%;
+.name p {
+text-align: center;
+font-size: 120%;
+margin: 5px 0px 2px;
 }
 
-.fourth{
-margin-top:40px;
-margin-bottom:20px;
-margin-left: 250px;
-margin-right:250px;
-padding: 30px 20px 30px 20px;
-width:60%;
+
+@media (max-width: 768px) { 
+.main-buttons {
+    width: 94%;
+    padding: 20px 10px;
+    margin: 24px auto 12px;
 }
+}
+
+
