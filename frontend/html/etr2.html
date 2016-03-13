@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>thenewboston</title>
+    <title>I.T. Department - Training Requests, First page for employee</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-=======
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
->>>>>>> fff885d75e1ed69d184fbf9d182aaf7b92b58ffc
-    <link rel="stylesheet" type="text/css" href="etr2.css">
+    <link rel="stylesheet" type="text/css" href="../css/etr2.css">
 </head>
 <body>
 
-<!-- general container???????????????????-->
-  <div class="container-fluid whole">
+<!-- general container-->
+  <div class="container">
 
 <!-- Navbar -->
 <div class="bs-example">
@@ -45,25 +39,23 @@
     </nav>
 </div>
 
-
 <!-- Text-->
-
     <div class="row name"> 
         <div class="col-xs-12 col-sm-12 col-md-12">
-              <p> I.T. Department - Training Requests </br>for Scott C Wissel</p>
-              <p> Y - Approved; <br> N - Not Approved; <br>P - Pending; <br> N/A - Approval not required</p>
+              <p> <strong>I.T. Department - Training Requests </br>for Scott C Wissel</strong></p>
+              <p><strong> Y</strong> - Approved; <br> <strong>N</strong> - Not Approved; <br> <strong>P</strong>- Pending; <br> <strong>N/A </strong>- Approval not required</p>
         </div>
     </div>
 
 
+<!-- New Request button -->
 
-
-<!-- New Request button and Table -->
   <div>
-      <button type="button" class="btn btn-block btn-lg button" style="background-color:#527F92; color: white;">New Request</button>
+      <button type="button" class="btn btn-block btn-lg button">New Request</button>
 </div>
 
-    <div class="row top" style="background-color:#527F92">
+<!-- Table-->
+    <div class="row top">
   <div class="col-xs-2 col-sm-2 col-md-3"><p>Edit Request</p></div>
   <div class= "col-xs-3 col-sm-3 col-md-4"><p>Course Name</p></div>
   <div class="col-xs-3 col-sm-3 col-md-3"><p>Start/End Date</p></div>
@@ -71,16 +63,12 @@
   <div class="col-xs-2 col-sm-2 col-md-1"><p>Mark</p></div>
   </div>
   
-<<<<<<< HEAD
-   <div class="row" style="background-color:#eleace">
-=======
-   <div class="row" style="background-color:##eleace">
->>>>>>> fff885d75e1ed69d184fbf9d182aaf7b92b58ffc
+   <div class="row rows row-odd">
   <div class="col-xs-2 col-sm-2 col-md-3"><a href = "#">000001</a></div>
   <div class="col-xs-3 col-sm-3 col-md-4">Tech Education</div>
   <div class="col-xs-3 col-sm-3 col-md-3">02/25/2016  <br>03/05/2016</div>
-  <div class="col-xs-2 col-sm-2 col-md-1"> Y </div>
-  <div class="col-xs-2 col-sm-2 col-md-1"> 
+  <div class="col-xs-2 col-sm-2 col-md-1 status"> Y </div>
+  <div class="col-xs-2 col-sm-2 col-md-1 text-center" > 
             <div class="checkbox">
             <label>
             <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
@@ -89,12 +77,12 @@
   </div>
   </div>
 
-  <div class="row" style="background-color:#d5e2e7">
+  <div class="row rows row-even">
   <div class="col-xs-2 col-sm-2 col-md-3"><a href = "#">000002</a></div>
   <div class="col-xs-3 col-sm-3 col-md-4">Microsoft System</div>
   <div class="col-xs-3 col-sm-3 col-md-3">03/25/2016 <br> 03/30/2016</div>
-  <div class="col-xs-2 col-sm-2 col-md-1"> N </div>
-  <div class="col-xs-2 col-sm-2 col-md-1"> 
+  <div class="col-xs-2 col-sm-2 col-md-1 status"> N </div>
+  <div class="col-xs-2 col-sm-2 col-md-1 text-center"> 
             <div class="checkbox">
             <label>
             <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
@@ -103,13 +91,13 @@
   </div>
   </div>
 
-  <div class="row" style="background-color:#eleace">
+  <div class="row rows row-odd">
   <div class="col-xs-2 col-sm-2 col-md-3"><a href = "#">000003</a></div>
   <div class="col-xs-3 col-sm-3 col-md-4">Humanities in I.T.</div>
   <div class="col-xs-3 col-sm-3 col-md-3">03/25/2016  <br> 04/30/2016</div>
-  <div class="col-xs-2 col-sm-2 col-md-1"> P </div>
+  <div class="col-xs-2 col-sm-2 col-md-1 status"> P </div>
   <div class="col-xs-2 col-sm-2 col-md-1"> 
-            <div class="checkbox">
+            <div class="checkbox text-center">
             <label>
             <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
             </label>
@@ -117,12 +105,12 @@
   </div>
   </div>
 
-<div class="row" style="background-color:#d5e2e7">
+<div class="row rows row-even">
   <div class="col-xs-2 col-sm-2 col-md-3"><a href = "#">000004</a></div>
   <div class="col-xs-3 col-sm-3 col-md-4">Master Architect</div>
   <div class="col-xs-3 col-sm-3 col-md-3">04/25/2016  <br> 04/30/2016</div>
-  <div class="col-xs-2 col-sm-2 col-md-1"> N/A </div>
-  <div class="col-xs-2 col-sm-2 col-md-1"> 
+  <div class="col-xs-2 col-sm-2 col-md-1 status"> N/A </div>
+  <div class="col-xs-2 col-sm-2 col-md-1 text-center"> 
             <div class="checkbox">
             <label>
             <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
@@ -130,12 +118,12 @@
             </div></div>
   </div>
   
-  <div class="row" style="background-color:##eleace">
+  <div class="row rows row-odd">
   <div class="col-xs-2 col-sm-2 col-md-3"><a href = "#">000005</a></div>
   <div class="col-xs-3 col-sm-3 col-md-4">Master Architect</div>
   <div class="col-xs-3 col-sm-3 col-md-3">04/25/2016  <br> 04/30/2016</div>
-  <div class="col-xs-2 col-sm-2 col-md-1"> N/A </div>
-  <div class="col-xs-2 col-sm-2 col-md-1"> 
+  <div class="col-xs-2 col-sm-2 col-md-1 status"> N/A </div>
+  <div class="col-xs-2 col-sm-2 col-md-1 text-center"> 
             <div class="checkbox">
             <label>
             <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
@@ -143,22 +131,22 @@
             </div></div>
   </div>
 
-  <div class="row" style="background-color:#d5e2e7">
+  <div class="row rows row-even">
   <div class="col-xs-2 col-sm-2 col-md-3"><a href = "#">000006</a></div>
   <div class="col-xs-3 col-sm-3 col-md-4">Master Architect</div>
   <div class="col-xs-3 col-sm-3 col-md-3">04/25/2016  <br> 04/30/2016</div>
-  <div class="col-xs-2 col-sm-2 col-md-1"> N/A </div>
-  <div class="col-xs-2 col-sm-2 col-md-1"> 
+  <div class="col-xs-2 col-sm-2 col-md-1 status"> N/A </div>
+  <div class="col-xs-2 col-sm-2 col-md-1 text-center"> 
             <div class="checkbox">
             <label>
             <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
             </label>
             </div></div>
   </div>
+  </div> <!--general conteiner closed-->
 
          
 
 
-</div> <!--closed general conteiner-->
 </body>
 </html
