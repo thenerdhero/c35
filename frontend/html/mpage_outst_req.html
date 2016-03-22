@@ -4,9 +4,14 @@
     <title>I.T Department Training Request Approval Sheet, Outstanding Requests</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+     <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type ="text/javascript" src="../js/mpage_outst_req.js"></script>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   
     <link rel="stylesheet" type="text/css" href="../css/mpage_outst_req.css">
 </head>
 <body>
@@ -53,6 +58,64 @@ Wissel, SC</strong></p>
         </div>
     </div>
     
+    
+   <div class="row search-option">
+ 
+          <div class=" col-xs-12 col-sm-12 col-md-4"> <strong>Start Date</strong>
+<div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+                          </span>
+                            </div>
+                             </div>
+                             <script type="text/javascript">
+                                   $(function () {
+                                      $('#datetimepicker1').datetimepicker();
+                                         });
+                                           </script>
+          </div>
+
+          <div class=" col-xs-12 col-sm-12 col-md-4"><strong> End Date </strong>
+
+           <div class="form-group">
+                             <div class='input-group date' id='datetimepicker1'>
+                          <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+          </div>
+        <script type="text/javascript">
+      $(function () {
+   $('#datetimepicker1').datetimepicker();
+ });
+ </script></div>
+ 
+ <div class=" col-xs-12 col-sm-12 col-md-4"> <strong>Search by Emloyee Name</strong>
+      <form class="na" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search">
+  </div>
+</form>
+          
+ 
+</div>
+
+
+<!--Search button-->                 
+<div class="row"> 
+  <div class="col-xs-12 col-sm-12 col-md-5"> </div>
+ <div class="col-xs-12 col-sm-12 col-md-7"> 
+<a href="#" class="btn search-button" role="button">Search</a> </div>
+</div>
+   </div>
+   
+ 
+ 
+ 
+    
     <div class="row name2"> 
         <div class="col-xs-12 col-sm-12 col-md-12">
                 <p><strong>Outstanding Requests</strong></p>
@@ -60,8 +123,8 @@ Wissel, SC</strong></p>
                       </div>
 
 <!--table-->
- <div class="row top">
-  <div class="col-xs-4 col-sm-4 col-md-4"><p>Request #</p></div>
+ <div id = "outst_req" class="row top"> </div><!--
+  <div class="col-xs-4 col-sm-4 col-md-4"><p>Request #<br>Employee Name</p></div>
   <div class= "col-xs-4 col-sm-4 col-md-4"><p>Start/End Date</p></div>
   <div class="col-xs-2 col-sm-2 col-md-2"><p>SV<br>Appv</p></div>
   <div class="col-xs-2 col-sm-2 col-md-2"><p>DH<br>Appv</p></div>
@@ -69,7 +132,7 @@ Wissel, SC</strong></p>
   
 
  <div class="row row-odd">
-  <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20150055</a></p></div>
+  <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20150055</a><br>KENDALL ZETTLMEIER</p></div>
   <div class= "col-xs-4 col-sm-4 col-md-4"><p>2016-02-07<br>2016-05-08</p></div>
   <div class="col-xs-2 col-sm-2 col-md-2"><p>Y</p></div>
   <div class="col-xs-2 col-sm-2 col-md-2"><p>P</p></div>
@@ -77,29 +140,30 @@ Wissel, SC</strong></p>
   
 
  <div class="row row-even">
-  <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20150022</a></p></div>
+  <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20150022</a> <br> JACQUELINE DUKES</p></div>
   <div class= "col-xs-4 col-sm-4 col-md-4"><p>2016-02-07<br>2016-05-08</p></div>
   <div class="col-xs-2 col-sm-2 col-md-2"><p>Y</p></div>
   <div class="col-xs-2 col-sm-2 col-md-2"><p>Y</p></div>
   </div>
 
  <div class="row row-odd">
-  <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20154578</a></p></div>
+  <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20154578</a><br>Alan Tang</p></div>
   <div class= "col-xs-4 col-sm-4 col-md-4"><p>2016-02-07<br>2016-05-08</p></div>
   <div class="col-xs-2 col-sm-2 col-md-2"><p>P</p></div>
   <div class="col-xs-2 col-sm-2 col-md-2"><p>P</p></div>
   </div>
   
   <div class="row row-even">
-  <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20150023</a></p></div>
+  <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20150023</a> <br>JACQUELINE DUKES</p></div>
   <div class= "col-xs-4 col-sm-4 col-md-4"><p>2016-02-07<br>2016-05-08</p></div>
   <div class="col-xs-2 col-sm-2 col-md-2"><p>P</p></div>
   <div class="col-xs-2 col-sm-2 col-md-2"><p>Y</p></div>
   </div>
+  -->
   
 
 
 </div> <!--closed general conteiner-->
 
 	</body>
-</html
+</html>

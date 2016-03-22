@@ -1,8 +1,32 @@
-.namee p {
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+color:#666666;
+margin:0;
+padding:0;
+}
 
-	 text-align: center;
-	 font-size: 110%;
-	 margin: 25px 0px 20px 0px;
+.name {
+	border-bottom: 5px solid #6c4d23;
+}
+.name p {
+text-align: center;
+font-size: 120%;
+margin: 2px 0px 10px;
+}
+
+.name3  {
+margin: 34px 0px 0px;
+}
+
+.info  {
+
+	text-align: center;
+	 font-size: 120%;
+	 margin-top:30px;
+	 margin-bottom:15px;
+	 background-color:#983222;
+	 color:#fff;
+	 padding: 12px 0px;
 }
 
 .al{
@@ -19,3 +43,14 @@
 	margin-bottom: 12px;
 }
 
+
+.send {
+	
+  width:65%;
+  padding:15px 0px;
+  background-color:#527F92;
+  color: #fff;
+  margin:15px auto 50px;
+  font-size: 160%
+  
+}

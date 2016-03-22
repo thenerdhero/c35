@@ -10,11 +10,17 @@ app.engine('html', require('ejs').renderFile);
 app.set('views', __dirname.replace('backend', 'frontend') + '/html');
 app.use(express.static(__dirname.replace('backend', 'frontend')));
 
-//Set up to use all the routes from router.js
-var router = require('./c35_modules/router');
-app.use('/', router);
+app.get('/mpage_outst_req', function(req,res){
+  console.log('app / mpage_outst_req requested');
+  return res.render('mpage_outst_req.html');
+});
 
-app.listen(port, function(){
-  console.log("Application is running:")
-  console.log("Listening on " + port);
+app.get('/etr2', function(req,res){
+  console.log('app / etr2 requested');
+  return res.render('etr2.html');
+});
+
+app.get('/manage2_all_requests', function(req,res){
+  console.log('app / manage2_all_requests requested');
+  return res.render('manage2_all_requests.html');
 });
