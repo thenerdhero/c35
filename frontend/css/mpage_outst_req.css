@@ -20,6 +20,21 @@ font-size:140%;
 margin: 15px 0px 5px;
 }
 
+.search-option {
+	margin: 28px 0px 16px;
+}
+
+
+.search-button {
+	
+  width:25%;
+  padding:14px 0px;
+  background-color:#527F92;
+  color: #fff;
+  margin: 7px auto 28px;
+  font-size: 140%;
+}
+
 
 
 .top{
