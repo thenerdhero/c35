@@ -4,6 +4,10 @@
     <title>I.T Department Training Request Approval Sheet, All Employees Requests</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+     <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type ="text/javascript" src="../js/manage2_all_requests.js"></script>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -143,59 +147,71 @@ Wissel, SC</strong></p>
                    </div>
                       </div>
 
+</div> <!--closed general conteiner-->
 
 <!--table-->
- <div class="row top">
+<!-- <div id = "manage-all-req" class="row top"> </div>-->
+
+      <div id = "manage-all-data" class="container"></div>-->
+     <!--
+     
   <div class="col-xs-4 col-sm-4 col-md-4"><p>Request #<br>Employee Name</p></div>
-  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Course Name</p></div>
-  <div class="col-xs-1 col-sm-1 col-md-1"><p>Status</p></div>
-  <div class="col-xs-3 col-sm-3 col-md-3"><p>Cost</p></div>
+  <div class= "col-xs-3 col-sm-3 col-md-3"><p>Course Name</p></div>
+  <div class="col-xs-1 col-sm-1 col-md-1"><p>SV Appv</p></div>
+   <div class="col-xs-1 col-sm-1 col-md-1"><p>DH Appv</p></div>
+    <div class="col-xs-1 col-sm-1 col-md-1"><p>VP Appv</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2"><p>Cost</p></div>
   </div>
   
 
  <div class="row row-odd">
   <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20150023</a> <br>JACQUELINE DUKES</p></div>
-  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Visual Studio Live! 2015</p></div>
+  <div class= "col-xs-3 col-sm-3 col-md-3"><p>Visual Studio Live! 2015</p></div>
   <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
-  <div class="col-xs-3 col-sm-3 col-md-3">1795.00</div>
+   <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
+    <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2">1795.00</div>
   </div>
   
 
  <div class="row row-even">
   <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20150055</a><br>KENDALL ZETTLMEIER</p></div>
-  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Visual Studio Live! New York</p></div>
-  <div class="col-xs-1 col-sm-1 col-md-1"><p>N</p></div>
-  <div class="col-xs-3 col-sm-3 col-md-3">1455.00</div>
+  <div class= "col-xs-3 col-sm-3 col-md-3"><p>Visual Studio Live! New York</p></div>
+   <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
+   <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
+    <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2">1455.00</div>
   </div>
 
  <div class="row row-odd">
   <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20150022</a> <br> JACQUELINE DUKES</p></div>
-  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Learn latest Micosoft technology</p></div>
-  <div class="col-xs-1 col-sm-1 col-md-1"><p>P</p></div>
-  <div class="col-xs-3 col-sm-3 col-md-3">1000.00</div>
+  <div class= "col-xs-3 col-sm-3 col-md-3"><p>Learn latest Micosoft technology</p></div>
+  <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
+   <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
+    <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2">1000.00</div>
   </div>
   
   <div class="row row-even">
   <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20154578</a><br>Alan Tang</p></div>
-  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Learning AppDynmic all core product features</p></div>
-  <div class="col-xs-1 col-sm-1 col-md-1"><p>N/A</p></div>
-  <div class="col-xs-3 col-sm-3 col-md-3">2400.00</div>
-  </div>
-  
-  <div class="row row-odd">
-  <div class="col-xs-4 col-sm-4 col-md-4"><p><a href = "#">20150023</a> <br>JACQUELINE DUKES</p></div>
-  <div class= "col-xs-4 col-sm-4 col-md-4"><p>Visual Studio Live! 2015</p></div>
+  <div class= "col-xs-3 col-sm-3 col-md-3"><p>Learning AppDynmic all core product features</p></div>
   <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
-  <div class="col-xs-3 col-sm-3 col-md-3">1795.00</div>
+   <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
+    <div class="col-xs-1 col-sm-1 col-md-1"><p>Y</p></div>
+  <div class="col-xs-2 col-sm-2 col-md-2">2400.00</div>
   </div>
   
+  -->
+  
+
+  
 
 
   
 
 
 
-</div> <!--closed general conteiner-->
+
 
 	</body>
 </html>

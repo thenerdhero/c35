@@ -1,7 +1,8 @@
 serverJson =[  
    {  
       "trng_reqst_nbr":20140015,
-      "cntct_email_addr":"ALAN_TANG@TTX.COM",
+      "cntct_name":"ALAN TANG",
+      "cntct_email_addr":"ALAN_TANG@TTX.COM", 
       "cntct_email_immed_supv_addr":"SCOTT.WISSEL@TTX.COM",
       "cntct_email_dept_hd_addr":"KATHY_MILLER@TTX.COM",
       "trng_cors_id":"          ",
@@ -45,6 +46,10 @@ serverJson =[
    },
    {  
       "trng_reqst_nbr":20150044,
+<<<<<<< 5ac3cdcafce15b4d223e787f31d90f1709e37b8b
+=======
+      "cntct_name":"ORLINE CACAYAN",
+>>>>>>> Iryna: added all files that we need for today
       "cntct_email_addr":"ORLINE_CACAYAN@TTX.COM",
       "cntct_email_immed_supv_addr":"SCOTT.WISSEL@TTX.COM",
       "cntct_email_dept_hd_addr":"PURNESH.RUSTAGI@TTX.COM",
@@ -89,6 +94,10 @@ serverJson =[
    },
    {  
       "trng_reqst_nbr":20150053,
+<<<<<<< 5ac3cdcafce15b4d223e787f31d90f1709e37b8b
+=======
+      "cntct_name":"ALAN TANG",
+>>>>>>> Iryna: added all files that we need for today
       "cntct_email_addr":"ALAN_TANG@TTX.COM",
       "cntct_email_immed_supv_addr":"SCOTT.WISSEL@TTX.COM",
       "cntct_email_dept_hd_addr":"PURNESH.RUSTAGI@TTX.COM",
@@ -133,6 +142,10 @@ serverJson =[
    },
    {  
       "trng_reqst_nbr":20150076,
+<<<<<<< 5ac3cdcafce15b4d223e787f31d90f1709e37b8b
+=======
+      "cntct_name":"ALAN TANG",
+>>>>>>> Iryna: added all files that we need for today
       "cntct_email_addr":"ALAN_TANG@TTX.COM",
       "cntct_email_immed_supv_addr":"SCOTT.WISSEL@TTX.COM",
       "cntct_email_dept_hd_addr":"PURNESH.RUSTAGI@TTX.COM",
@@ -177,6 +190,10 @@ serverJson =[
    },
    {  
       "trng_reqst_nbr":20160006,
+<<<<<<< 5ac3cdcafce15b4d223e787f31d90f1709e37b8b
+=======
+       "cntct_name":"ALAN TANG",
+>>>>>>> Iryna: added all files that we need for today
       "cntct_email_addr":"ALAN_TANG@TTX.COM",
       "cntct_email_immed_supv_addr":"SCOTT.WISSEL@TTX.COM",
       "cntct_email_dept_hd_addr":"PURNESH.RUSTAGI@TTX.COM",
@@ -221,6 +238,10 @@ serverJson =[
    },
    {  
       "trng_reqst_nbr":20160009,
+<<<<<<< 5ac3cdcafce15b4d223e787f31d90f1709e37b8b
+=======
+      "cntct_name":"KENDALL ZETTLMEIER",
+>>>>>>> Iryna: added all files that we need for today
       "cntct_email_addr":"KENDALL.ZETTLMEIER@TTX.COM",
       "cntct_email_immed_supv_addr":"SCOTT.WISSEL@TTX.COM",
       "cntct_email_dept_hd_addr":"PURNESH.RUSTAGI@TTX.COM",
@@ -265,6 +286,10 @@ serverJson =[
    },
    {  
       "trng_reqst_nbr":20160010,
+<<<<<<< 5ac3cdcafce15b4d223e787f31d90f1709e37b8b
+=======
+      "cntct_name":"JACQUELINE DUKES",
+>>>>>>> Iryna: added all files that we need for today
       "cntct_email_addr":"JACQUELINE.DUKES@TTX.COM",
       "cntct_email_immed_supv_addr":"SCOTT.WISSEL@TTX.COM",
       "cntct_email_dept_hd_addr":"PURNESH.RUSTAGI@TTX.COM",
@@ -309,6 +334,10 @@ serverJson =[
    },
    {  
       "trng_reqst_nbr":20160011,
+<<<<<<< 5ac3cdcafce15b4d223e787f31d90f1709e37b8b
+=======
+       "cntct_name":"RICH ROUSSEAU",
+>>>>>>> Iryna: added all files that we need for today
       "cntct_email_addr":"RICH.ROUSSEAU@TTX.COM",
       "cntct_email_immed_supv_addr":"SCOTT.WISSEL@TTX.COM",
       "cntct_email_dept_hd_addr":"PURNESH.RUSTAGI@TTX.COM",
