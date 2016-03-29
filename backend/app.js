@@ -12,12 +12,12 @@ app.engine('html', require('ejs').renderFile);
 app.set('views', __dirname.replace('backend', 'frontend') + '/html');
 app.use(express.static(__dirname.replace('backend', 'frontend')));
 
-<<<<<<< 5ac3cdcafce15b4d223e787f31d90f1709e37b8b
+
 app.get('/mpage_outst_req', function(req,res){
   console.log('app / mpage_outst_req requested');
   return res.render('mpage_outst_req.html');
 });
-=======
+
 
 
 //Set up to use all the routes from router.js
@@ -26,18 +26,16 @@ var router1 = require('./routers/mpage_outst_req-router');
 var router2 = require('./routers/manage2_all_requests-router');
 var router3 = require('./routers/nrp-router');
 
+var router4 = require('./routers/aprovereject-router');
+
 
 app.use('/', router);
 app.use('/', router1);
 app.use('/', router2);
 app.use('/', router3);
+app.use('/', router4);
 
 
-
-
-
-
->>>>>>> Iryna: added all files that we need for today
 
 app.get('/etr2', function(req,res){
   console.log('app / etr2 requested');
