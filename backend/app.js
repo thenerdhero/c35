@@ -25,7 +25,6 @@ var router = require('./routers/etr2-router');
 var router1 = require('./routers/mpage_outst_req-router');
 var router2 = require('./routers/manage2_all_requests-router');
 var router3 = require('./routers/nrp-router');
-
 var router4 = require('./routers/aprovereject-router');
 
 
@@ -36,13 +35,7 @@ app.use('/', router3);
 app.use('/', router4);
 
 
-
-app.get('/etr2', function(req,res){
-  console.log('app / etr2 requested');
-  return res.render('etr2.html');
-});
-
-app.get('/manage2_all_requests', function(req,res){
-  console.log('app / manage2_all_requests requested');
-  return res.render('manage2_all_requests.html');
+app.listen(port, function(){
+  console.log("Application is running:");
+  console.log("Listening on " + port);
 });

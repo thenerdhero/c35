@@ -28,7 +28,7 @@ console.log(JSON.stringify(rowObject));
       tableString+=`
       
 
-  <div class="col-xs-4 col-sm-4 col-md-4"><a href = "aprovereject.html"> <p> ${rowObject.trng_reqst_nbr} </p></a> <p>${rowObject.cntct_email_addr} </p> </div>
+  <div class="col-xs-4 col-sm-4 col-md-4"><a href = "aprovereject"> <p> ${rowObject.trng_reqst_nbr} </p></a> <p>${rowObject.cntct_email_addr} </p> </div>
 
   <div class= "col-xs-4 col-sm-4 col-md-4"> <p> ${rowObject.trng_cors_strt_dt} </p> <p> ${ rowObject.trng_cors_end_dt}</p> </div>
 
