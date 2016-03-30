@@ -30,7 +30,7 @@ $.each(results, function(index, rowObject){
       
       tableString +=`
       
-     <div class="col-xs-3 col-sm-4 col-md-4"> <a href = "aprovereject.html"><p> ${rowObject.trng_reqst_nbr} </p></a> <p>${rowObject.cntct_name} </p> </div>
+     <div class="col-xs-3 col-sm-4 col-md-4"> <a href = "aprovereject"><p> ${rowObject.trng_reqst_nbr} </p></a> <p>${rowObject.cntct_name} </p> </div>
   <div class= "col-xs-3 col-sm-3 col-md-3"> <p>${rowObject.trng_cors_nm}</p> </div>
   <div class="col-xs-1 col-sm-1 col-md-1"> <p>${rowObject.trng_reqst_immed_supv_apvl_flg} </p> </div>
    <div class="col-xs-1 col-sm-1 col-md-1"> <p> ${ rowObject.trng_reqst_dept_hd_apvl_flg} </p> </div>

@@ -39,7 +39,7 @@ module.exports = function() {
     return res.render('aprovereject.html');
   });
   
-  router4.get('/', function(req,res){
+  router4.get('/mpage_outst_req', function(req,res){
     return res.render('mpage_outst_req.html');
   });
 

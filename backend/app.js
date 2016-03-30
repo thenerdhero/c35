@@ -25,7 +25,6 @@ var router = require('./routers/etr2-router');
 var router1 = require('./routers/mpage_outst_req-router');
 var router2 = require('./routers/manage2_all_requests-router');
 var router3 = require('./routers/nrp-router');
-
 var router4 = require('./routers/aprovereject-router');
 
 
@@ -35,7 +34,14 @@ app.use('/', router2);
 app.use('/', router3);
 app.use('/', router4);
 
+<<<<<<< HEAD
 app.listen(port, function(){
  console.log("Application is running:");
  console.log("Listening on " + port);
+=======
+
+app.listen(port, function(){
+  console.log("Application is running:");
+  console.log("Listening on " + port);
+>>>>>>> db75606ab93f11046b68b58fb10614e8785b3a9b
 });
