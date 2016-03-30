@@ -8,7 +8,10 @@ for emploee</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="http://multidatespickr.sourceforge.net/jquery-ui.multidatespicker.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/nrp.css">
+    
 </head>
 <body>
 
@@ -17,27 +20,27 @@ for emploee</title>
 
 <!-- Navbar -->
 <div class="bs-example">
-      <nav role="navigation" class="navbar navbar-default">
-        <div class="navbar-header">
-          <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" width="25%">
-            </img>
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-           
-        </div>
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                        <li><a href="#">Instruction</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
-        </div>
-    </nav>
+      <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+      <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" width="25%">
+        </img>
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+    </div>
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="#">Instruction</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Logout</a></li>
+            </ul>
+    </div>
+</nav>
 </div>
 
 <!-- Title-->
@@ -126,11 +129,10 @@ for emploee</title>
                     			</span>
                 						</div>
            									 </div>
-       											 <script type="text/javascript">
-           												 $(function () {
-                											$('#datetimepicker1').datetimepicker();
-           															 });
-       																     </script>
+       											 <input id="datePick" type="text"/>
+                                                    <script>
+                                                     $('#datePick').multiDatesPicker();
+                                                      </script>
 																				</div>
 
 														<div class="col-xs-12 col-sm-12 col-md-4"> <strong>End Date *</strong>

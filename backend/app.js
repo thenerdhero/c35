@@ -35,14 +35,7 @@ app.use('/', router2);
 app.use('/', router3);
 app.use('/', router4);
 
-
-
-app.get('/etr2', function(req,res){
-  console.log('app / etr2 requested');
-  return res.render('etr2.html');
-});
-
-app.get('/manage2_all_requests', function(req,res){
-  console.log('app / manage2_all_requests requested');
-  return res.render('manage2_all_requests.html');
+app.listen(port, function(){
+ console.log("Application is running:");
+ console.log("Listening on " + port);
 });
