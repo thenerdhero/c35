@@ -4,7 +4,7 @@ $('#datetimepicker1').datetimepicker();//for our calendars
 $('#datetimepicker2').datetimepicker();
  
     //getStub('/getmanage2_all_requests', function(results){ 
-     $.get('/getetr2', function(results){ 
+     $.get('/getmanage2_all_requests', function(results){ 
      
  var tableString = `
      <div class="row top">
@@ -37,7 +37,7 @@ $.each(results, function(index, rowObject){
       
       tableString +=`
       
-     <div class="col-xs-3 col-sm-4 col-md-4"> <a href = "aprovereject"><p> ${rowObject.trng_reqst_nbr} </p></a> <p>${rowObject.cntct_name} </p> </div>
+     <div class="col-xs-3 col-sm-4 col-md-4"> <a href = "aprovereject"><p> ${rowObject.trng_reqst_nbr} </p></a> <p>${rowObject.name} </p> </div>
   <div class= "col-xs-3 col-sm-3 col-md-3"> <p>${rowObject.trng_cors_nm}</p> </div>
   <div class="col-xs-1 col-sm-1 col-md-1"> <p>${rowObject.trng_reqst_immed_supv_apvl_flg} </p> </div>
    <div class="col-xs-1 col-sm-1 col-md-1"> <p> ${ rowObject.trng_reqst_dept_hd_apvl_flg} </p> </div>
@@ -63,8 +63,9 @@ function getStub(endpoint, callback){
     stubbedJson = [
 {"id":1,
 "trng_reqst_nbr":20140015,
+ "cntct_email_addr":"ALAN TANG@TTX.COM",
 "trng_cors_nm":"Visual Studio Live",
- "cntct_name":"ALAN TANG",
+ 
       
      "trng_reqst_immed_supv_apvl_flg":"Y",
       "trng_reqst_dept_hd_apvl_flg":"Y",
@@ -73,16 +74,17 @@ function getStub(endpoint, callback){
       
 {"id":2,
 "trng_reqst_nbr":20150044, 
+"cntct_email_addr":"ALAN TANG@TTX.COM",
 "trng_cors_nm":"Visual Studio Live! 2015",
- "cntct_name":"ORLINE CACAYAN",
       "trng_reqst_immed_supv_apvl_flg":"Y",
       "trng_reqst_dept_hd_apvl_flg":"P",
       "trng_reqst_vp_apvl_flg":"P", 
         "trng_cors_cost":"1895.00"},
       
 {"id":3, "trng_reqst_nbr":20150053, 
-"trng_cors_nm":"Visual Studio Live", 
-"cntct_name":"ALAN TANG",
+"cntct_email_addr":"ALAN TANG@TTX.COM",
+"trng_cors_nm":"Visual Studio Live",
+
       "trng_reqst_immed_supv_apvl_flg":"Y",
       "trng_reqst_dept_hd_apvl_flg":"P",
       "trng_reqst_vp_apvl_flg":"P",
@@ -90,8 +92,9 @@ function getStub(endpoint, callback){
       
 {"id":4, 
 "trng_reqst_nbr":20160009,
+"cntct_email_addr":"ALAN TANG@TTX.COM",
 "trng_cors_nm":"AppDynamics In Action for Power Users - .NET",
-"cntct_name":"ALAN TANG",
+
       "trng_reqst_immed_supv_apvl_flg":"P",
       "trng_reqst_dept_hd_apvl_flg":"P",
       "trng_reqst_vp_apvl_flg":"P",

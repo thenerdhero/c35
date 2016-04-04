@@ -26,11 +26,12 @@ var database = require('../db');
 
 module.exports = function() {
     
-     router2.get('/getetr2', function(req,res){
+     router2.get('/getmanage2_all_requests', function(req,res){
   console.log('app / getetr2');
-  database.executeQuery(`SELECT Trng_Reqst_Nbr, Cntct_Email_Addr,
-  Trng_Cors_Nm,Trng_Reqst_Immed_Supv_Apvl_Flg, Trng_Reqst_Dept_Hd_Apvl_Flg, 
-  Trng_Reqst_VP_Apvl_Flg, Trng_Cors_Cost FROM TTX_Empl_Trng_Reqst FROM TTX_Empl_Trng_Reqst`, function(results) {
+  database.executeQuery(` SELECT Trng_Reqst_Nbr, name, Trng_Cors_Nm, Trng_Reqst_Immed_Supv_Apvl_Flg, Trng_Reqst_Dept_Hd_Apvl_Flg, 
+  Trng_Reqst_VP_Apvl_Flg, Trng_Cors_Cost
+  FROM TTX_Empl_Trng_Reqst rn, TTX_Empl_Name nm
+  WHERE rn.cntct_email_addr = nm.cntct_email_addr;`, function(results) {
       res.send(results);
   });
 });
