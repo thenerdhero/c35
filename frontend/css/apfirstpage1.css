@@ -2,7 +2,12 @@ body {
 font-family: Verdana, Arial, Helvetica, sans-serif;
 color:#666666;
 margin:0;
-padding:50px;
+padding:0;
+}
+
+#topButton {
+    margin: 84px auto 16px;
+    
 }
 
 .main-buttons{

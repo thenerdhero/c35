@@ -5,14 +5,17 @@ $(document).ready(function(){
     $.get('/getetr2', function(results){ 
 
     var tableString = `
-<div class="row top"><div class="col-xs-4 col-sm-4 col-md-4"><p>Request #<br>Employee Name</p></div>
-<div class= "col-xs-4 col-sm-4 col-md-4"><p>Start/End Date</p></div> <div class="col-xs-2 col-sm-2 col-md-2"><p>SV<br>Appv</p></div>
-<div class="col-xs-2 col-sm-2 col-md-2"><p>DH<br>Appv</p></div></div>
+<div class="row top"><div class="col-xs-3 col-sm-3 col-md-3"><p>Request #<br>Employee Name</p></div>
+<div class= "col-xs-4 col-sm-4 col-md-4"><p>Start/End Date</p></div>
+<div class= "col-xs-3 col-sm-3 col-md-3"><p>Cost</p></div>
+<div class="col-xs-1 col-sm-1 col-md-1"><p>SV<br>Appv</p></div>
+<div class="col-xs-1 col-sm-1 col-md-1"><p>DH<br>Appv</p></div></div>
   `;
   
   console.log (results);
   
   var rowNumber = 0;
+  
 
 $.each(results, function(index, rowObject){
     
@@ -25,16 +28,26 @@ $.each(results, function(index, rowObject){
 
 console.log(JSON.stringify(rowObject));
 
+
+
+var startDate = rowObject.trng_cors_strt_dt;
+startDate = startDate.substring(0, 10);
+
+var endDate =rowObject.trng_cors_end_dt;
+endDate = endDate.substring(0, 10);
+
+
       tableString+=`
       
 
-  <div class="col-xs-4 col-sm-4 col-md-4"><a href = "aprovereject"> <p> ${rowObject.trng_reqst_nbr} </p></a> <p>${rowObject.cntct_email_addr} </p> </div>
+  <div class= "col-xs-3 col-sm-3 col-md-3"><a href = "aprovereject"> <p> ${rowObject.trng_reqst_nbr} </p></a> <p>${rowObject.cntct_email_addr} </p> </div>
 
-  <div class= "col-xs-4 col-sm-4 col-md-4"> <p> ${rowObject.trng_cors_strt_dt} </p> <p> ${ rowObject.trng_cors_end_dt}</p> </div>
+  <div class= "col-xs-4 col-sm-4 col-md-4"> <p> ${startDate} </p> <p> ${ endDate}</p> </div>
+  <div class= "col-xs-3 col-sm-3 col-md-3"><p> ${rowObject.Trng_Cors_Cost} </p></div>
 
-   <div class="col-xs-2 col-sm-2 col-md-2"> <p> ${rowObject.trng_reqst_immed_supv_apvl_flg}</p> </div>
+   <div class="col-xs-1 col-sm-1 col-md-1"> <p> ${rowObject.trng_reqst_immed_supv_apvl_flg}</p> </div>
    
- <div class="col-xs-2 col-sm-2 col-md-2"> <p> ${ rowObject.trng_reqst_dept_hd_apvl_flg} </p> </div></div> `
+ <div class="col-xs-1 col-sm-1 col-md-1"> <p> ${ rowObject.trng_reqst_dept_hd_apvl_flg} </p> </div></div> `
 
 });
 

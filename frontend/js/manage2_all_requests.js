@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+$('#datetimepicker1').datetimepicker();//for our calendars
+$('#datetimepicker2').datetimepicker();
  
     //getStub('/getmanage2_all_requests', function(results){ 
      $.get('/getetr2', function(results){ 
@@ -21,12 +24,16 @@ $(document).ready(function(){
 
 $.each(results, function(index, rowObject){
     
-    myRowN++;
+    
+     myRowN++;
     if (myRowN % 2 != 0) {
          tableString+=`<div class="row row-odd">`;
     } else {
         tableString+=`<div class="row row-even">`;
     }
+  
+  
+  
       
       tableString +=`
       

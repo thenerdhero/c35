@@ -42,6 +42,11 @@ module.exports = function() {
   router3.get('/', function(req,res){
     return res.render('apfirstpage1.html');
   });
+/*  
+router3.post('/nrp', function(req,res){
+  console.log('posted to /nrp');
+  return res.send("success");
+});*/
 
 
   return router3

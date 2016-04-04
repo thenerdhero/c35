@@ -34,14 +34,9 @@ app.use('/', router2);
 app.use('/', router3);
 app.use('/', router4);
 
-<<<<<<< HEAD
+
+
 app.listen(port, function(){
  console.log("Application is running:");
  console.log("Listening on " + port);
-=======
-
-app.listen(port, function(){
-  console.log("Application is running:");
-  console.log("Listening on " + port);
->>>>>>> db75606ab93f11046b68b58fb10614e8785b3a9b
 });

@@ -2,7 +2,11 @@ body {
 font-family: Verdana, Arial, Helvetica, sans-serif;
 color:#666666;
 margin:0;
-padding:50px;
+padding:0;
+}
+
+.navbarPadding {
+padding-top: 95px;
 }
 
 .name {
@@ -10,13 +14,13 @@ padding:50px;
 }
 .name p {
 text-align: center;
-font-size: 120%;
+font-size: 100%;
 margin: 2px 0px 10px;
 }
 
 .name2 {
 text-align:center;
-font-size:140%;
+font-size:100%;
 margin: 10px 0px 2px;
 }
 
@@ -42,26 +46,74 @@ margin: 10px 0px 2px;
 
 .top p {
 	
-	margin: 27px 0px;
+	margin: 20px 0px;
 	text-align: center;
 	color:white;
-	font-size: 120%;
+	font-size: 110%;
 	
 }
 
 .row-odd{
 	background-color:#fff;
-		padding:23px 0px 23px;
+		padding:12px 0px 12px;
 	text-align: center;
 }
 
 .row-even{
 	background-color:#E7E7C1;
-		padding:23px 0px 23px;
+		padding:12px 0px 12px;
 	text-align: center;
 }
 
 @media (max-width: 768px) { 
+	.name p {
+text-align: center;
+font-size: 86%;
+margin: 1px 0px 1px;
+}
+
+.name2 {
+text-align:center;
+font-size:96%;
+margin: 1px 0px 1px;
+}
+
+.search-option {
+	margin: 1px 0px 1px;
+}
+
+.status {
+		margin: 1px 0px 1px;
+		
+}
+
+.date1 {
+		margin: 1px 0px 1px;
+}
+
+.date2 {
+		margin: 1px 0px 1px;
+}
+
+.search-button {
+	
+  width:25%;
+  padding:2px 0px;
+  background-color:#527F92;
+  color: #fff;
+  margin: 1px auto 7px;
+  font-size: 100%;
+}
+
+
+
+.navbarPadding {
+padding-top: 66px;
+}
+
+	
+	
+	
 .top p {
 	
 	margin: 15px 0px;
@@ -92,5 +144,8 @@ margin: 10px 0px 2px;
   
 }
 
+.navbarPadding {
+padding-top: 66px;
+}
 
 }

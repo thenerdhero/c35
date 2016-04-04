@@ -6,16 +6,21 @@ for emploee</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-      <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-    <script type ="text/javascript" src="../js/nrp.js"></script>
+     <script   src="https://code.jquery.com/jquery-1.12.2.js"  
+     integrity="sha256-VUCyr0ZXB5VhBibo2DkTVhdspjmxUgxDGaLQx7qb7xY="   crossorigin="anonymous"></script>
+    <script src="../js/nrp.js"></script>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="http://multidatespickr.sourceforge.net/jquery-ui.multidatespicker.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/nrp.css">
-    
+     
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js "> </script>
+     
+     <link rel="stylesheet" type="text/css" href="../css/nrp.css">
+
+
 </head>
 <body>
 
@@ -24,27 +29,27 @@ for emploee</title>
 
 <!-- Navbar -->
 <div class="bs-example">
-      <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
-    <div class="navbar-header">
-      <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" width="25%">
-        </img>
-        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-
-    </div>
-    <div id="navbarCollapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                    <li><a href="#">Instruction</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Logout</a></li>
-            </ul>
-    </div>
-</nav>
+      <nav role="navigation" class="navbar navbar-default">
+        <div class="navbar-header">
+          <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" width="25%">
+            </img>
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                        <li><a href="#">Instruction</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+        </div>
+    </nav>
 </div>
 
 <!-- Title-->
@@ -84,9 +89,9 @@ for emploee</title>
 <div class="col-xs-12 col-sm-12 col-md-8">
 <form role="form">
     <label class="radio-inline">
-      <input type="radio" name="optradio"><p><strong>Internal Course </strong> </p></label>
+      <input id = "rdb1" type="radio" name="toggler" value="1"><p><strong>Internal Course </strong> </p></label>
         <label class="radio-inline">
-          <input type="radio" name="optradio"><p><strong>External Course </strong></p></label>
+          <input id = "rdb2" type="radio" name="toggler" value ="2"><p><strong>External Course </strong></p></label>
   </form>
   </div>
   
@@ -97,10 +102,7 @@ for emploee</title>
 </div> <!-- Conteiner closed-->
 
 
- <div class="container" id = "addCourseForm"> <!-- new conteiner for input fields-->
-
-
-
+ <div class="container toShow" id = "blk-1"> <!-- new conteiner for only internal course-->
 
 <!--Course Type, Name and ID row -->
 <div class="row fields"> 
@@ -125,10 +127,14 @@ for emploee</title>
 													</div>
 
 										 <div class="col-xs-12 col-sm-12 col-md-5"> <strong>Course Name *</strong>
- 	      							<form class="form-horizontal">
- 								<input type="text" id = "courseName" class="form-control" placeholder="Course Name">
-    					</form>
-					</div>
+										<form role="form" method="post" id="test" >
+   <div class="form-group" >
+     <input id="selectCrsName" class="form-control" placeholder="Course Name" required>
+   </div>
+ </form>
+</div>
+
+
 <div class="col-xs-12 col-sm-12 col-md-5"> <strong>Course # or ID </strong>
 			<form class="form-horizontal">
 						<input type="text" class="form-control" placeholder="Course # or ID">
@@ -142,32 +148,25 @@ for emploee</title>
 	<div class="col-xs-12 col-sm-12 col-md-4"> <strong>Start Date *</strong>
 		<div class="form-group">
                 <div class='input-group date'  id='datetimepicker1'>
-                    <input type='text' class="form-control" />
+                    <input type='text'id = "calendar1" class="form-control" />
                     	<span class="input-group-addon">
                         	<span class="glyphicon glyphicon-calendar"></span>
                     			</span>
                 						</div>
            									 </div>
-       											 <input id="datePick" type="text"/>
-                                                    <script>
-                                                     $('#datePick').multiDatesPicker();
-                                                      </script>
-																				</div>
+       										
+												</div>
 
 														<div class="col-xs-12 col-sm-12 col-md-4"> <strong>End Date *</strong>
 												<div class="form-group">
-               							 <div class='input-group date'  id='datetimepicker1'>
-                    			<input type='text' class="form-control" />
+               							 <div class='input-group date'  id='datetimepicker2'>
+                    			<input type='text' id = "calendar2" class="form-control" />
                     		<span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
                 </div>
         	</div>
-        <script type="text/javascript">
-      $(function () {
-   $('#datetimepicker1').datetimepicker();
- });
- </script>
+       
 </div>
 
 <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Total Hours*</strong>
@@ -186,12 +185,12 @@ for emploee</title>
     								</form>
 											 </div>
 
-										<div class="col-xs-12 col-sm-12 col-md-4"> Website Address
+										<div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> Website Address
  									<form class="form-horizontal">
     						<input type="text"  class="form-control" placeholder="Website Adress">
     					</form>
  					</div>
-<div class="col-xs-12 col-sm-12 col-md-4"> <strong>Cost ($) * </strong>
+<div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Cost ($) * </strong>
  			<form class="form-horizontal">
     				<input type="text"  class="form-control" placeholder="Cost($)*">
     					</form>
@@ -208,13 +207,13 @@ for emploee</title>
     					</form>
 								 </div>
 
-								<div class="col-xs-12 col-sm-12 col-md-4"> <strong>Course Benefit * </strong>
+								<div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Course Benefit * </strong>
  						<form class="form-horizontal">
     				<input type="text" class="form-control" placeholder="Website Adress">
     		</form>
  	</div>
 
- <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Is the cost of the training included in this year's plan?</strong>
+ <div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Is the cost of the training included in this year's plan?</strong>
  			<form role="form">
   					<label class="radio-inline"><input type="radio" name="optradio">Yes</label>
 							<label class="radio-inline"><input type="radio" name="optradio">NO</label>
@@ -222,6 +221,10 @@ for emploee</title>
  										</div>
 </div>
 
+</div> <!--conteiner for internal course closed-->
+
+
+<div class="container toHide" id = "blk-2"> <!--container for external courses opened-->
 <!-- Vendor info-->
  <div class="row info"> 
         <div class="col-xs-12 col-sm-12 col-md-12"><p><b>VENDOR INFORMATION</b></p></div>
@@ -235,13 +238,13 @@ for emploee</title>
               </form>
                  </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Vendor Address#1</strong>
+                <div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Vendor Address#1</strong>
             <form class="form-horizontal">
             <input type="text" class="form-control" placeholder="Vendor Address#1">
         </form>
   </div>
 
- <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Vendor Address#2</strong>
+ <div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Vendor Address#2</strong>
       <form class="form-horizontal">
             <input type="text" class="form-control" placeholder="Vendor Address#2">
               </form>
@@ -256,13 +259,13 @@ for emploee</title>
               </form>
                  </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Vendor State </strong>
+                <div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Vendor State </strong>
             <form class="form-horizontal">
             <input type="text" class="form-control" placeholder="Vendor State">
         </form>
   </div>
 
- <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Vendor Zip  </strong>
+ <div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Vendor Zip  </strong>
       <form class="form-horizontal">
             <input type="text" class="form-control" placeholder="Vendor Zip">
               </form>
@@ -277,22 +280,18 @@ for emploee</title>
                     </form>
                     </div>
                   </div>
+                  
+
+		</div> <!--I closed my conteiner for external field-->
 
 <!-- BUTTON --> 
 <div class="row"> 
-  <div class="col-xs-12 col-sm-12 col-md-4"> </div>
- <div class="col-xs-12 col-sm-12 col-md-8"> 
- 
- <a href="#`" class="btn send"</a> <role="button">Send for Approval</a> </div>
-<script>
-function myFunction() {
-    alert("I am an alert box!");
-}
-</script>
-</div>
-   </div>
+          <div class="col-xs-2 col-sm-2 col-md-4"> </div>
+ <div class="col-xs-10 col-sm-10 col-md-8"> 
+<button type="submit" form="nameform" class = "btn send" value="Send for Approve">Send for Approve</button> 
+ </div>
+ </div>
 
 
-		</div> <!--I closed my conteiner for input fields-->
 	</body>
 </html>

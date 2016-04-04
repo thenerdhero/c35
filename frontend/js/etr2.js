@@ -31,13 +31,20 @@ $.each(results, function(index, rowObject){
         tableString+=`<div class="row row-even">`;
     }
 
+var startDate = rowObject.trng_cors_strt_dt;
+startDate = startDate.substring(0, 10);
+
+var endDate =rowObject.trng_cors_end_dt;
+endDate = endDate.substring(0, 10);
+
+
       tableString +=`
       
       <div class="col-xs-3 col-sm-2 col-md-2"> <a href = "#"> <p> ${rowObject.trng_reqst_nbr} </p></a> </div>
   
    <div class= "col-xs-3 col-sm-3 col-md-3"><p>${rowObject.trng_cors_nm}</p></div>
 
-   <div class="hidden-xs col-sm-3 col-md-3"> <p> ${rowObject.trng_cors_strt_dt} </p> <p> ${ rowObject.trng_cors_end_dt}</p> </div>
+   <div class="hidden-xs col-sm-3 col-md-3"> <p> ${startDate} </p> <p> ${endDate}</p> </div>
    
    
    

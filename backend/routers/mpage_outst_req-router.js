@@ -31,7 +31,7 @@ module.exports = function() {
     router1.get('/getetr2', function(req,res){
   console.log('app / getetr2 requested');
   database.executeQuery(`SELECT Trng_Reqst_Nbr, Cntct_Email_Addr, Trng_Cors_Strt_Dt,
-  Trng_Cors_End_Dt, Trng_Reqst_Immed_Supv_Apvl_Flg, Trng_Reqst_Dept_Hd_Apvl_Flg FROM TTX_Empl_Trng_Reqst`, function(results) {
+  Trng_Cors_End_Dt, Trng_Cors_CostTrng_Reqst_Immed_Supv_Apvl_Flg, Trng_Reqst_Dept_Hd_Apvl_Flg FROM TTX_Empl_Trng_Reqst GROUP BY Trng_Reqst_Immed_Supv_Apvl_Flg = "P"`, function(results) {
       res.send(results);
   });
 });

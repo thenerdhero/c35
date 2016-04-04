@@ -2,14 +2,14 @@ body {
 font-family: Verdana, Arial, Helvetica, sans-serif;
 color:#666666;
 margin:0;
-padding:50px;
+padding:0;
 }
 
 .name p {
 
 	 text-align: center;
 	 font-size: 120%;
-	 margin: 25px 0px 10px 0px;
+	 margin: 12px 0px 10px 0px;
 }
 
 .aprove p {
@@ -28,11 +28,11 @@ padding:50px;
 
 	text-align: center;
 	 font-size: 120%;
-	 margin-top:50px;
-	 margin-bottom:25px;
+	 margin-top:30px;
+	 margin-bottom:15px;
 	 background-color:#983222;
 	 color:#fff;
-	 padding: 18px 0px;
+	 padding: 10px 0px;
 }
 
 .radio-inline p {
@@ -102,15 +102,39 @@ padding:50px;
 
 
 @media (max-width: 768px) { 
-	.radio-inline p {
-	margin-right: 9px;
+.name p {
+	 font-size: 110%;
+	 margin: 4px 0px 6px 0px;
 }
 
+.aprove p {
+	font-size:90%;
+}
+	
+
+.info  {
+	 font-size: 100%;
+	 margin-top:7px;
+	 margin-bottom:7px;
+	 padding: 6px 0px;
+}	
+
+.radio-inline p {
+	margin-right: 8px;
+}
+
+
+
+.marginTop2{
+	margin-top:16px;
+}
+
+
 .send {
-width:40%;
-padding:10px 0px;
-font-size:80%;
-margin: 2px 0px 20px;
+width:75%;
+padding:19px 0px;
+font-size:100%;
+margin: 2px auto 40px;
 }
 
 }
