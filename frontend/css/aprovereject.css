@@ -55,14 +55,76 @@ margin: 34px 0px 0px;
   
 }
 
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #527F92;
+    color: #fff;
+    padding: 15px 0px;
+    font-size: 140%;
+    cursor: pointer;
+    margin:30px 8px 5px;
+    width:420%;
+    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #98aeb6;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #527F92;;
+}
+
+
+
 @media (max-width: 768px) { 
 	.send {
 	
   width:90%;
   padding:15px 0px;
-  margin:30px 8px 90px;
+  margin:30px 8px 2px;
   font-size: 120%
   
+}
+
+.dropbtn {
+    background-color: #527F92;
+    color: #fff;
+    padding: 15px 0px;
+    font-size: 120%;
+    cursor: pointer;
+    margin:30px 8px 40px;
+    width:220%;
+    
 }
 
 

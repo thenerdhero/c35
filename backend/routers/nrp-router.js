@@ -42,11 +42,36 @@ module.exports = function() {
   router3.get('/', function(req,res){
     return res.render('apfirstpage1.html');
   });
-/*  
-router3.post('/nrp', function(req,res){
-  console.log('posted to /nrp');
+
+router3.post('/addRequest', function(req,res){
+  console.log('posted to /nrp' + req.body.Trng_Cors_Nm);
+  var sql = `
+   INSERT INTO TTX_Empl_Trng_Reqst
+   
+   (Trng_Cors_Nm, trng_reqst_nbr, cntct_email_addr,
+   cntct_email_immed_supv_addr, cntct_email_dept_hd_addr,
+   Trng_Cors_Id, trng_cors_nbr, Trng_Cors_Strt_Dt, 
+   Trng_Cors_End_Dt,Trng_Cors_Totl_Nbr_Hrs, Trng_Cors_Cost,
+   Trng_Cors_Locn, Trng_Reqst_Cors_Bnft_Txt, Vndr_Nm, lst_updt_id, 
+   Trng_Reqst_Immed_Supv_Apvl_Flg, 	Trng_Reqst_Dept_Hd_Apvl_Flg, Trng_Reqst_VP_Apvl_Flg,
+   	Trng_Cors_Compl_Flg, Trng_Cors_Rltd_Exp_Amt)
+   
+   VALUES ('${req.body.Trng_Cors_Nm}', '12233', 'ikorchynska@icstrars.org', 
+   'iryna.korchynska@gmail.com', 'ik2202014@gmail.com',
+   '${req.body.Trng_Cors_Id}', '4455', '${req.body.Trng_Cors_Strt_Dt}', 
+   '${req.body.Trng_Cors_End_Dt}', '${req.body.Trng_Cors_Totl_Nbr_Hrs}', '${req.body.Trng_Cors_Cost}',
+   '${req.body.Trng_Cors_Locn}', '${req.body.Trng_Reqst_Cors_Bnft_Txt}', '${req.body.Vndr_Nm}', '344', 
+   'P', 'P', 'P', ' ', '${req.body.Trng_Cors_Rltd_Exp_Amt}');
+  `;
+   database.executeQuery(sql, function(res){
+       console.log(res);
+   });
+   console.log(sql);
+
+
+  
   return res.send("success");
-});*/
+});
 
 
   return router3

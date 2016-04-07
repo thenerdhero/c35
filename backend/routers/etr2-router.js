@@ -29,62 +29,14 @@ router.get('/getetr2', function(req,res){
   console.log('app / etr2 requested');
   database.executeQuery(`SELECT Trng_Reqst_Nbr, Trng_Cors_Nm, Trng_Cors_Strt_Dt,
   Trng_Cors_End_Dt, Trng_Reqst_Immed_Supv_Apvl_Flg, Trng_Reqst_Dept_Hd_Apvl_Flg, 
-  Trng_Reqst_VP_Apvl_Flg, Trng_Cors_Compl_Flg FROM TTX_Empl_Trng_Reqst`, function(results) {
+  Trng_Reqst_VP_Apvl_Flg, Trng_Cors_Compl_Flg FROM TTX_Empl_Trng_Reqst;`,
+  function(results) {
       res.send(results);
   });
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//where cntct_email_addr = 'ALAN_TANG@TTX.COM'
 
   router.get('/etr2', function(req,res){
     return res.render('etr2.html');

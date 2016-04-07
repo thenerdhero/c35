@@ -29,7 +29,7 @@ for emploee</title>
 
 <!-- Navbar -->
 <div class="bs-example">
-      <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+      <nav role="navigation" class="navbar navbar-default ">  <!--navbar-fixed-top-->
         <div class="navbar-header">
           <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" width="25%">
             </img>
@@ -87,12 +87,12 @@ for emploee</title>
 
   <div class="col-xs-0 col-sm-0 col-md-4">  </div>
 <div class="col-xs-12 col-sm-12 col-md-8">
-<form role="form">
+
     <label class="radio-inline">
-      <input id = "rdb1" type="radio" name="toggler" value="1"><p><strong>Internal Course </strong> </p></label>
+      <input id = "rdb1" type="radio" name="toggler" value="1" checked="checked"/><p><strong>Internal Course </strong> </p></label>
         <label class="radio-inline">
-          <input id = "rdb2" type="radio" name="toggler" value ="2"><p><strong>External Course </strong></p></label>
-  </form>
+          <input id = "rdb2" type="radio" name="toggler" value ="2"/><p><strong>External Course </strong></p></label>
+  
   </div>
   
 
@@ -106,8 +106,8 @@ for emploee</title>
 
 <!--Course Type, Name and ID row -->
 <div class="row fields"> 
- <div class="col-xs-12 col-sm-12 col-md-2"> <strong>Course Type *</strong>
-             <form role="form">
+ <div class="col-xs-12 col-sm-12 col-md-2"> <strong>Course Type</strong>
+             <form role="form" id = "Try">
     				<div class="checkbox">
       						<label><input type="checkbox" value="">Classroom</label>
     								</div>
@@ -123,22 +123,23 @@ for emploee</title>
    	 		<div class="checkbox">
      					 <label><input type="checkbox" value="">Web/Computer</label>
     								</div>
-											</form>
+											
+										
 													</div>
 
 										 <div class="col-xs-12 col-sm-12 col-md-5"> <strong>Course Name *</strong>
-										<form role="form" method="post" id="test" >
-   <div class="form-group" >
-     <input id="selectCrsName" class="form-control" placeholder="Course Name" required>
+										
+   
+     <input id="Trng_Cors_Nm" class="form-control" placeholder="Course Name" required>
    </div>
- </form>
-</div>
+ 
 
 
-<div class="col-xs-12 col-sm-12 col-md-5"> <strong>Course # or ID </strong>
-			<form class="form-horizontal">
-						<input type="text" class="form-control" placeholder="Course # or ID">
-								</form>
+
+<div class="col-xs-12 col-sm-12 col-md-5 marginTop2"> <strong>Course # or ID </strong>
+		
+						<input id = "Trng_Cors_Id" type="text" class="form-control" placeholder="Course # or ID"/>
+								
 										</div>
 </div>
 
@@ -148,7 +149,7 @@ for emploee</title>
 	<div class="col-xs-12 col-sm-12 col-md-4"> <strong>Start Date *</strong>
 		<div class="form-group">
                 <div class='input-group date'  id='datetimepicker1'>
-                    <input type='text'id = "calendar1" class="form-control" />
+                    <input id = "Trng_Cors_Strt_Dt" type='text'id = "calendar1" class="form-control" required />
                     	<span class="input-group-addon">
                         	<span class="glyphicon glyphicon-calendar"></span>
                     			</span>
@@ -158,21 +159,21 @@ for emploee</title>
 												</div>
 
 														<div class="col-xs-12 col-sm-12 col-md-4"> <strong>End Date *</strong>
-												<div class="form-group">
+												
                							 <div class='input-group date'  id='datetimepicker2'>
-                    			<input type='text' id = "calendar2" class="form-control" />
+                    			<input id = "Trng_Cors_End_Dt" type='text' id = "calendar2" class="form-control" required/>
                     		<span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
                 </div>
         	</div>
        
-</div>
 
-<div class="col-xs-12 col-sm-12 col-md-4"> <strong>Total Hours *</strong>
-			<form class="form-horizontal">
-    				<input type="text" class="form-control" placeholder="Total Hours">
-    					</form>
+
+<div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Total Hours *</strong>
+			
+    				<input id = "Trng_Cors_Totl_Nbr_Hrs" type="text" class="form-control" placeholder="Total Hours"  required>
+    					
 							</div>
 								 </div>
 
@@ -180,20 +181,19 @@ for emploee</title>
 <!--Location/Website Address/ Costs-->
 <div class="row ad"> 
  			<div class="col-xs-12 col-sm-12 col-md-4"><strong>Location *</strong>
- 					<form class="form-horizontal">
-    						<input type="text"  class="form-control" placeholder="Location">
-    								</form>
+ 					
+    						<input id = "Trng_Cors_Locn" type="text"  class="form-control" placeholder="Location" required>
+    								
 											 </div>
 
-										<div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> Website Address
- 									<form class="form-horizontal">
+										<div class="col-xs-12 col-sm-12 col-md-4 marginTop2"><strong> Website Address </strong>
+ 									
     						<input type="text"  class="form-control" placeholder="Website Address">
-    					</form>
+    					
  					</div>
 <div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Cost ($) * </strong>
- 			<form class="form-horizontal">
-    				<input type="text"  class="form-control" placeholder="Cost">
-    					</form>
+ 						<input id = "Trng_Cors_Cost" type="text"  class="form-control" placeholder="Cost" required>
+    				
     					  </div>
 
   </div>
@@ -202,29 +202,29 @@ for emploee</title>
 
 <div class="row fields"> 
  		<div class="col-xs-12 col-sm-12 col-md-4"> <strong>Related Expense ($) * </strong>
- 			<form class="form-horizontal">
-    				<input type="text" class="form-control" placeholder="Related Expense">
-    					</form>
+ 		
+    				<input id = "Trng_Cors_Rltd_Exp_Amt" type="text" class="form-control" placeholder="Related Expense" required>
+    				
 								 </div>
 
 								<div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Course Benefit * </strong>
- 						<form class="form-horizontal">
-    				<input type="text" class="form-control" placeholder="Course Benefit">
-    		</form>
+ 						
+    				<input id = "Trng_Reqst_Cors_Bnft_Txt" type="text" class="form-control" placeholder="Course Benefit">
+    	
  	</div>
 
- <div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Is the cost of the training included in this year's plan?</strong>
- 			<form role="form">
-  					<label class="radio-inline"><input type="radio" name="optradio">Yes</label>
-							<label class="radio-inline"><input type="radio" name="optradio">No</label>
-  									</form>
+ <div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Is the cost of the training included in this year's plan? *</strong>
+ 			
+  					<label class="radio-inline"><input id = "Trng_Cors_Budg_Pln_Flg" type="radio" name="optradio" >Yes</label>
+							<label class="radio-inline"><input id = "Trng_Cors_Budg_Pln_Flg" type="radio" name="optradio">No</label>
+  									
  										</div>
 </div>
 
 </div> <!--conteiner for internal course closed-->
 
 
-<div class="container toHide" id = "blk-2"> <!--container for external courses opened-->
+<div class="container toHide hidden" id = "blk-2"> <!--container for external courses opened-->
 <!-- Vendor info-->
  <div class="row info"> 
         <div class="col-xs-12 col-sm-12 col-md-12"><p><b>VENDOR INFORMATION</b></p></div>
@@ -233,65 +233,66 @@ for emploee</title>
 <!--Vendor Name/Vendor Address#1/ Address#2-->
 <div class="row fields"> 
     <div class="col-xs-12 col-sm-12 col-md-4"><strong> Vendor Name * </strong>
-      <form class="form-horizontal">
-            <input type="text" class="form-control" placeholder="Vendor Name">
-              </form>
+   
+            <input id = "Vndr_Nm" type="text" class="form-control" placeholder="Vendor Name" required>
+             
                  </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Vendor Address #1</strong>
-            <form class="form-horizontal">
-            <input type="text" class="form-control" placeholder="Vendor Address #1">
-        </form>
+           
+            <input id = "Vndr_Mail_Addr" type="text" class="form-control" placeholder="Vendor Address #1">
   </div>
 
  <div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Vendor Address #2</strong>
-      <form class="form-horizontal">
-            <input type="text" class="form-control" placeholder="Vendor Address #2">
-              </form>
+      
+            <input id = "Vndr_Mail_Addr_Ln_2" type="text" class="form-control" placeholder="Vendor Address #2">
+              
                 </div>
 </div>
 
 <!--Vendor city, Vendor State, Vendor Zip-->
 <div class="row fields"> 
     <div class="col-xs-12 col-sm-12 col-md-4"> <strong>Vendor City </strong>
-      <form class="form-horizontal">
-            <input type="text" class="form-control" placeholder="Vendor City">
-              </form>
+     
+            <input id="Vndr_Mail_City" type="text" class="form-control" placeholder="Vendor City">
+              
                  </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Vendor State </strong>
-            <form class="form-horizontal">
-            <input type="text" class="form-control" placeholder="Vendor State">
-        </form>
+            
+            <input id = "Vndr_Mail_St" type="text" class="form-control" placeholder="Vendor State">
+       
   </div>
 
  <div class="col-xs-12 col-sm-12 col-md-4 marginTop2"> <strong>Vendor Zip Code  </strong>
-      <form class="form-horizontal">
-            <input type="text" class="form-control" placeholder="Vendor Zip Code">
-              </form>
+    
+            <input id="Vndr_Mail_Zip_Cd" type="text" class="form-control" placeholder="Vendor Zip Code">
+             
                 </div>
 </div>
 
  <div class="row fields"> 
         <div class="col-xs-12 col-sm-12 col-md-4"><strong> Forward to Accounting?</strong>
-      <form role="form">
-            <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
-              <label class="radio-inline"><input type="radio" name="optradio">No</label>
-                    </form>
+     
+            <label class="radio-inline"><input id="Trng_Reqst_Fwd_Actg_Paym_Flg" type="radio" name="optradio">Yes</label>
+              <label class="radio-inline"><input id="Trng_Reqst_Fwd_Actg_Paym_Flg" type="radio" name="optradio">No</label>
+                  
                     </div>
                   </div>
                   
 
-		</div> <!--I closed my conteiner for external field-->
+</div> <!--I closed my conteiner for external field-->		
 
 <!-- BUTTON --> 
 <div class="row"> 
           <div class="col-xs-2 col-sm-2 col-md-4"> </div>
  <div class="col-xs-10 col-sm-10 col-md-8"> 
-<button type="submit" form="nameform" class = "btn send" value="Send for Approve">Send for Approve</button> 
+ <!--<button type="submit" form="nameform" class = "btn send" value="Send for Approve" onclick="myFunction()">Send for Approve</button>-->
+<input type="submit"  class = "btn send" value="Send for Approve" /> 
  </div>
  </div>
-
+ 
+</form>
 
 	</body>
 </html>

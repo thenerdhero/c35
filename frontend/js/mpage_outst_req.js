@@ -56,7 +56,7 @@ endDate = endDate.substring(0, 10);
 });
 });
 
-
+/*
  function getStub(endpoint, callback){
   var stubbedJson="";
   if (endpoint =="/getmpage_outst_req"){
@@ -77,7 +77,7 @@ endDate = endDate.substring(0, 10);
   callback(stubbedJson);  
 } 
 
-
+*/
 
 
 

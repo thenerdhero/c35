@@ -12,6 +12,7 @@ padding:0;
 	 margin: 12px 0px 10px 0px;
 }
 
+
 .aprove p {
 
 	 text-align: center;
@@ -89,9 +90,10 @@ padding:0;
 }
 
 */
+/*
 .navbarPadding {
 padding-top: 70px;
-}
+}*/
 .send {
 	
   width:45%;
@@ -123,6 +125,7 @@ padding-top: 70px;
 
 .radio-inline p {
 	margin-right: 8px;
+
 }
 
 
@@ -138,6 +141,11 @@ padding:19px 0px;
 font-size:100%;
 margin: 2px auto 40px;
 }
+
+.marginTop2{
+	margin-top:16px;
+}
+
 
 }
 

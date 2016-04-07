@@ -29,11 +29,13 @@ var database = require('../db');
 module.exports = function() {
     
     router1.get('/getmpage_outst_req', function(req,res){
-  console.log('app / getmpage_outst_req requested');
+  console.log('app / mpage_outst_req requested');
    database.executeQuery(`SELECT Trng_Reqst_Nbr, name, Trng_Cors_Strt_Dt,
   Trng_Cors_End_Dt, Trng_Cors_Cost, Trng_Reqst_Immed_Supv_Apvl_Flg, Trng_Reqst_Dept_Hd_Apvl_Flg 
   FROM TTX_Empl_Trng_Reqst rn, TTX_Empl_Name nm
-  WHERE rn.cntct_email_addr = nm.cntct_email_addr;`, function(results) {
+  WHERE rn.cntct_email_addr = nm.cntct_email_addr
+  AND Trng_Reqst_Dept_Hd_Apvl_Flg = 'P'
+  ;`, function(results) {
       res.send(results);
   });
 });
